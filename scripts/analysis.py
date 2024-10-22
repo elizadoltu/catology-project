@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-file_path = './Cats_database.xlsx'
+file_path = './data/Cats_database.xlsx'
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
 output_directory = 'auto'

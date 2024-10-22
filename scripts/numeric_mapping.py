@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the Excel file
-file_path = 'Translated_Data_cat_personality_and_predation.xlsx'
+file_path = './data/Translated_Data_cat_personality_and_predation.xlsx'
 df = pd.read_excel(file_path)
 
 # Define mappings for the categorical variables
@@ -29,7 +29,7 @@ df['Area'] = df['Area'].map(area_mapping)  # Apply the area mapping
 df['Number of Cats'] = df['Number of Cats'].map(number_of_cats_mapping)
 
 # Save the modified DataFrame to a new Excel file
-df.to_excel('Cats_database.xlsx', index=False)
+df.to_excel('./data/Cats_database.xlsx', index=False)
 
 # Optional: Create boxplots
 # plt.figure(figsize=(14, 10))
