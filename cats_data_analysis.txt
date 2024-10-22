@@ -1,0 +1,1875 @@
+Number of instances for each class (Breed):
+Breed
+5     1022
+14     483
+1      239
+8      217
+6      198
+7      192
+2      192
+3      166
+12     135
+13      80
+9       76
+10      58
+4       31
+11      28
+15      26
+Name: count, dtype: int64
+
+Attribute: Row.names
+Distinct values: [  1  10 100 ... 997 998 999]
+Global value counts:
+Row.names
+999     1
+1       1
+10      1
+100     1
+1000    1
+       ..
+1007    1
+1008    1
+1009    1
+101     1
+1010    1
+Name: count, Length: 3143, dtype: int64
+
+Value counts by Breed:
+Breed  Row.names
+1      39           1
+       41           1
+       44           1
+       45           1
+       54           1
+                   ..
+15     2456         1
+       2520         1
+       2761         1
+       2770         1
+       2772         1
+Name: count, Length: 3143, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Timestamp
+Distinct values: <DatetimeArray>
+['2021-02-09 16:36:39.042000', '2021-02-12 18:25:58.373000',
+ '2021-03-06 22:04:33.192000', '2021-02-18 16:10:11.117000',
+ '2021-02-18 18:00:50.851000', '2021-02-18 18:55:18.755000',
+ '2021-02-18 18:57:15.452000', '2021-02-18 20:10:02.664000',
+ '2021-02-18 20:22:16.840000', '2021-02-18 20:39:20.803000',
+ ...
+ '2021-02-18 08:58:35.197000', '2021-02-18 09:17:56.237000',
+ '2021-02-18 09:53:24.228000', '2021-02-18 10:36:10.924000',
+ '2021-02-18 11:50:02.980000', '2021-02-18 12:31:48.805000',
+ '2021-02-18 12:46:59.496000', '2021-02-18 13:17:13.050000',
+ '2021-02-18 13:41:21.263000', '2021-02-18 14:43:20.693000']
+Length: 3143, dtype: datetime64[ns]
+Global value counts:
+Timestamp
+2021-02-18 14:43:20.693    1
+2021-02-09 16:36:39.042    1
+2021-02-12 18:25:58.373    1
+2021-03-06 22:04:33.192    1
+2021-02-18 16:10:11.117    1
+                          ..
+2021-02-18 20:44:41.766    1
+2021-02-18 21:08:33.972    1
+2021-02-18 21:19:20.159    1
+2021-03-06 22:38:11.467    1
+2021-02-18 23:05:07.682    1
+Name: count, Length: 3143, dtype: int64
+
+Value counts by Breed:
+Breed  Timestamp              
+1      2021-02-14 11:09:23.988    1
+       2021-02-14 19:16:45.922    1
+       2021-02-14 19:36:25.035    1
+       2021-02-15 15:57:30.259    1
+       2021-02-15 19:21:58.133    1
+                                 ..
+15     2021-03-08 08:45:39.559    1
+       2021-03-08 09:47:04.680    1
+       2021-03-08 15:13:47.785    1
+       2021-03-08 18:46:09.190    1
+       2021-03-10 12:54:58.478    1
+Name: count, Length: 3143, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Gender
+Distinct values: [1 0 3]
+Global value counts:
+Gender
+0    1651
+1    1486
+3       6
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Gender
+1      0         123
+       1         116
+2      1          99
+       0          93
+3      0          91
+       1          75
+4      0          19
+       1          12
+5      0         523
+       1         497
+       3           2
+6      0         126
+       1          71
+       3           1
+7      0         108
+       1          84
+8      1         110
+       0         106
+       3           1
+9      0          38
+       1          38
+10     0          30
+       1          28
+11     0          14
+       1          14
+12     1          70
+       0          65
+13     0          49
+       1          30
+       3           1
+14     0         250
+       1         232
+       3           1
+15     0          16
+       1          10
+Name: count, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Age Group
+Distinct values: [1 3 2 4]
+Global value counts:
+Age Group
+3    1560
+2     617
+1     610
+4     356
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Age Group
+1      3            107
+       2             69
+       1             57
+       4              6
+2      3             97
+       1             46
+       2             39
+       4             10
+3      3             78
+       2             41
+       1             40
+       4              7
+4      3             19
+       4              6
+       1              3
+       2              3
+5      3            518
+       1            173
+       4            171
+       2            160
+6      3             96
+       2             56
+       1             39
+       4              7
+7      3             98
+       2             42
+       1             30
+       4             22
+8      3             98
+       1             65
+       2             48
+       4              6
+9      2             27
+       3             26
+       1             19
+       4              4
+10     3             27
+       4             13
+       2             10
+       1              8
+11     3              9
+       1              7
+       4              7
+       2              5
+12     3             80
+       1             27
+       2             21
+       4              7
+13     3             40
+       2             16
+       1             15
+       4              9
+14     3            253
+       4             81
+       1             75
+       2             74
+15     3             14
+       1              6
+       2              6
+Name: count, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Breed
+Distinct values: [ 2  5 14  6  1 13  7 10  3 12  4  8 11  9 15]
+Global value counts:
+Breed
+5     1022
+14     483
+1      239
+8      217
+6      198
+7      192
+2      192
+3      166
+12     135
+13      80
+9       76
+10      58
+4       31
+11      28
+15      26
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed
+1      239
+2      192
+3      166
+4       31
+5     1022
+6      198
+7      192
+8      217
+9       76
+10      58
+11      28
+12     135
+13      80
+14     483
+15      26
+Name: count, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Number of Cats
+Distinct values: [3 1 4 2 6 5]
+Global value counts:
+Number of Cats
+1    1282
+2     974
+3     364
+6     225
+4     202
+5      96
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Number of Cats
+1      1                 112
+       2                  68
+       3                  23
+       6                  14
+       4                  11
+                        ... 
+15     3                   5
+       4                   3
+       6                   3
+       2                   2
+       5                   1
+Name: count, Length: 89, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Housing Type
+Distinct values: [1 2 3 4]
+Global value counts:
+Housing Type
+4    1001
+3     988
+2     784
+1     370
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Housing Type
+1      2                76
+       3                66
+       4                64
+       1                33
+2      4                67
+       3                59
+       2                48
+       1                18
+3      3                53
+       2                48
+       4                47
+       1                18
+4      4                12
+       3                 8
+       2                 6
+       1                 5
+5      3               333
+       4               331
+       2               241
+       1               117
+6      4                77
+       3                65
+       2                40
+       1                16
+7      4                66
+       3                64
+       2                46
+       1                16
+8      4                63
+       2                62
+       3                62
+       1                30
+9      3                22
+       4                21
+       2                20
+       1                13
+10     3                20
+       2                18
+       4                14
+       1                 6
+11     3                 9
+       1                 7
+       2                 7
+       4                 5
+12     4                40
+       3                39
+       2                38
+       1                18
+13     3                29
+       4                27
+       2                16
+       1                 8
+14     4               159
+       3               152
+       2               108
+       1                64
+15     2                10
+       4                 8
+       3                 7
+       1                 1
+Name: count, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Area
+Distinct values: [1 3 2]
+Global value counts:
+Area
+3    1227
+1    1100
+2     816
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Area
+1      3        89
+       1        88
+       2        62
+2      3        81
+       1        57
+       2        54
+3      1        68
+       3        54
+       2        44
+4      3        13
+       1        11
+       2         7
+5      3       412
+       1       341
+       2       269
+6      3        79
+       1        62
+       2        57
+7      3        74
+       1        66
+       2        52
+8      1        94
+       3        75
+       2        48
+9      1        32
+       3        27
+       2        17
+10     1        28
+       3        17
+       2        13
+11     1        17
+       2         6
+       3         5
+12     3        61
+       1        39
+       2        35
+13     3        32
+       2        26
+       1        22
+14     3       196
+       1       166
+       2       121
+15     3        12
+       1         9
+       2         5
+Name: count, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Outside Access
+Distinct values: [0 2 1 3 4]
+Global value counts:
+Outside Access
+0    1314
+2     797
+1     624
+3     374
+4      34
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Outside Access
+1      0                 114
+       1                  59
+       2                  53
+       3                  13
+2      0                  99
+                        ... 
+14     4                   8
+15     0                  14
+       2                   6
+       1                   5
+       3                   1
+Name: count, Length: 66, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Observations
+Distinct values: [0 2 3 1]
+Global value counts:
+Observations
+2    1984
+3     827
+1     323
+0       9
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Observations
+1      2               165
+       3                58
+       1                16
+2      2               113
+       3                66
+       1                12
+       0                 1
+3      2               103
+       3                42
+       1                21
+4      2                25
+       3                 4
+       1                 2
+5      2               637
+       3               265
+       1               118
+       0                 2
+6      2               126
+       3                61
+       1                11
+7      2               139
+       3                36
+       1                16
+       0                 1
+8      2               131
+       3                63
+       1                23
+9      2                44
+       3                31
+       1                 1
+10     2                39
+       3                12
+       1                 6
+       0                 1
+11     2                16
+       3                 8
+       1                 3
+       0                 1
+12     2                77
+       3                45
+       1                11
+       0                 2
+13     2                47
+       3                18
+       1                15
+14     2               305
+       3               110
+       1                67
+       0                 1
+15     2                17
+       3                 8
+       1                 1
+Name: count, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Shy
+Distinct values: [1 4 3 2 5]
+Global value counts:
+Shy
+1    1081
+4     704
+2     648
+3     437
+5     273
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Shy
+1      1      106
+       2       61
+       4       42
+       3       23
+       5        7
+             ... 
+15     3        7
+       1        6
+       2        6
+       4        6
+       5        1
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Calm
+Distinct values: [1 4 2 5 3]
+Global value counts:
+Calm
+4    1172
+5     678
+2     545
+3     528
+1     220
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Calm
+1      2       73
+       4       54
+       1       52
+       3       46
+       5       14
+               ..
+15     1        9
+       2        6
+       3        6
+       4        3
+       5        2
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Scared
+Distinct values: [1 3 2 4 5]
+Global value counts:
+Scared
+1    1004
+3     815
+2     680
+4     439
+5     205
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Scared
+1      1         93
+       3         67
+       2         54
+       4         17
+       5          8
+                 ..
+15     1         14
+       3          9
+       2          1
+       4          1
+       5          1
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Smart
+Distinct values: [1 4 5 2 3]
+Global value counts:
+Smart
+5    1329
+4    1265
+3     350
+2     136
+1      63
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Smart
+1      5        132
+       4         82
+       3         13
+       2         10
+       1          2
+               ... 
+14     1         13
+15     5         14
+       4         10
+       1          1
+       3          1
+Name: count, Length: 72, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Vigilant
+Distinct values: [1 4 5 3 2]
+Global value counts:
+Vigilant
+4    1212
+5    1048
+3     477
+2     275
+1     131
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Vigilant
+1      4           91
+       5           85
+       3           34
+       2           21
+       1            8
+                   ..
+15     5           11
+       4            8
+       3            5
+       1            1
+       2            1
+Name: count, Length: 73, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Persevering
+Distinct values: [1 5 4 3 2]
+Global value counts:
+Persevering
+4    1116
+5    1046
+3     610
+2     255
+1     116
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Persevering
+1      5              113
+       4               89
+       3               25
+       1                6
+       2                6
+                     ... 
+15     4               11
+       5                7
+       3                4
+       2                3
+       1                1
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Loving
+Distinct values: [1 5 4 3 2]
+Global value counts:
+Loving
+5    1504
+4     992
+3     352
+2     212
+1      83
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Loving
+1      5         103
+       4          78
+       3          30
+       2          21
+       1           7
+                ... 
+15     4          11
+       5          11
+       3           2
+       1           1
+       2           1
+Name: count, Length: 74, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Friendly
+Distinct values: [1 5 4 2 3]
+Global value counts:
+Friendly
+4    1048
+5     735
+3     522
+2     507
+1     331
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Friendly
+1      4           99
+       5           52
+       3           46
+       2           29
+       1           13
+                   ..
+15     3            7
+       1            6
+       4            5
+       2            4
+       5            4
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Solitary
+Distinct values: [1 2 3 5 4]
+Global value counts:
+Solitary
+2    831
+1    815
+4    680
+3    604
+5    213
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Solitary
+1      1           82
+       2           67
+       3           44
+       4           36
+       5           10
+                   ..
+14     5           41
+15     2            9
+       1            8
+       4            6
+       3            3
+Name: count, Length: 74, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Brutal
+Distinct values: [1 2 4 3 5]
+Global value counts:
+Brutal
+1    1748
+2     605
+3     436
+4     273
+5      81
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Brutal
+1      1         88
+       3         56
+       2         54
+       4         37
+       5          4
+                 ..
+14     5         10
+15     1          8
+       2          8
+       4          8
+       3          2
+Name: count, Length: 71, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Dominant
+Distinct values: [1 2 3 4 5]
+Global value counts:
+Dominant
+1    1003
+3     721
+4     587
+2     570
+5     262
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Dominant
+1      4           67
+       3           61
+       2           45
+       1           41
+       5           25
+                   ..
+15     2            7
+       3            7
+       4            5
+       5            5
+       1            2
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Aggressive
+Distinct values: [1 3 2 5 4]
+Global value counts:
+Aggressive
+1    1165
+3     869
+2     570
+4     368
+5     171
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Aggressive
+1      1             79
+       3             70
+       2             47
+       4             31
+       5             12
+                     ..
+15     3              9
+       2              7
+       1              5
+       5              3
+       4              2
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Impulsive
+Distinct values: [1 4 2 3 5]
+Global value counts:
+Impulsive
+1    1009
+3     689
+2     674
+4     585
+5     186
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Impulsive
+1      4            74
+       1            51
+       2            45
+       3            45
+       5            24
+                    ..
+15     3             7
+       2             6
+       4             6
+       1             5
+       5             2
+Name: count, Length: 74, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Predictable
+Distinct values: [1 4 3 5 2]
+Global value counts:
+Predictable
+4    1278
+3     786
+5     428
+2     374
+1     277
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Predictable
+1      4              109
+       3               66
+       2               29
+       5               23
+       1               12
+                     ... 
+15     4               10
+       1                7
+       3                5
+       2                3
+       5                1
+Name: count, Length: 75, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Distracted
+Distinct values: [1 3 2 4 5]
+Global value counts:
+Distracted
+4    896
+3    890
+2    558
+1    431
+5    368
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Distracted
+1      4             85
+       3             55
+       2             35
+       5             33
+       1             31
+                     ..
+14     1             60
+15     4              9
+       3              7
+       2              6
+       1              4
+Name: count, Length: 73, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Abundance of Prey
+Distinct values: ['NSP' '3' '2' '1']
+Global value counts:
+Abundance of Prey
+3      1338
+2       851
+1       714
+NSP     240
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Abundance of Prey
+1      2                     80
+       3                     79
+       1                     61
+       NSP                   19
+2      3                     73
+       2                     60
+       1                     40
+       NSP                   19
+3      3                     55
+       2                     54
+       1                     40
+       NSP                   17
+4      3                     15
+       2                      7
+       1                      6
+       NSP                    3
+5      3                    509
+       2                    240
+       1                    213
+       NSP                   60
+6      3                     75
+       2                     63
+       1                     43
+       NSP                   17
+7      3                     66
+       2                     62
+       1                     46
+       NSP                   18
+8      1                     77
+       3                     58
+       2                     55
+       NSP                   27
+9      3                     33
+       1                     19
+       2                     17
+       NSP                    7
+10     2                     21
+       3                     21
+       1                     11
+       NSP                    5
+11     3                     12
+       2                     10
+       1                      4
+       NSP                    2
+12     3                     48
+       2                     42
+       1                     34
+       NSP                   11
+13     3                     42
+       2                     21
+       1                     16
+       NSP                    1
+14     3                    240
+       2                    111
+       1                     99
+       NSP                   33
+15     3                     12
+       2                      8
+       1                      5
+       NSP                    1
+Name: count, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Bird Predation
+Distinct values: [4 0 3 2 1]
+Global value counts:
+Bird Predation
+0    2278
+1     496
+2     196
+3     116
+4      57
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Bird Predation
+1      0                 210
+       1                  23
+       2                   3
+       3                   2
+       4                   1
+                        ... 
+14     3                  27
+       4                  10
+15     0                  20
+       1                   5
+       3                   1
+Name: count, Length: 68, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Mammal Predation
+Distinct values: [4 0 1 3 2]
+Global value counts:
+Mammal Predation
+0    2151
+1     404
+2     208
+4     196
+3     184
+Name: count, dtype: int64
+
+Value counts by Breed:
+Breed  Mammal Predation
+1      0                   197
+       1                    18
+       2                     9
+       3                     8
+       4                     7
+                          ... 
+14     4                    46
+       3                    39
+15     0                    22
+       1                     3
+       2                     1
+Name: count, Length: 68, dtype: int64
+
+--------------------------------------------------
+
+Attribute: Additional Info
+Distinct values: [nan
+ "Elle ne chasse pas car elle ne sort pas, si elle sortait, je sais qu'elle chasserait car elle a vécu seule dehors pendant au moins un an"
+ "Elle vient quand je l'appelle"
+ 'Mes chats ont accès à un enclos extérieur'
+ 'Il n’a accès à l’extérieur qu’en laisse aux beaux jours'
+ 'Ne sort que en chatterie et ne cherche pas à chasser les oiseaux qui rentrent à l’intérieur'
+ 'Pot de colle' 'Il adore l’eau et ramène ses jouets' 'Très pot de colle'
+ 'Chat sibérien, non habitué à sortir'
+ 'Le sommeil! Elle dort au moins 20 heures par jour...'
+ 'Cela fait 6 semaines que je l’ai adoptée, elle sortait d’e chez une humaine qui e-navigation + de 20 et elle ne s’en occupait pas plus d’elle même. C’est la SPA qui  est venue les mettre en sécurité. Donc c’est la raison pour laquelle je ne peux répondre à certaines questions.'
+ 'British longhair, ne sort pas du tout.'
+ "Un de mes 3 chats vient de l'extérieur mais les 3 ne sortent pas car pas encore castré et pas envie qu'ils se reproduisent."
+ 'Elle adore attraper les mouches et les araignées'
+ 'Pour l’instant il ne sort pas'
+ 'Elle ramène des vers de terre, des feuilles mortes.'
+ "J'ai une chatterie extérieure, ce qui réduit la prédation"
+ 'Ils sort très régulièrement mais en laisse et étant étudiant je vie chez ma mère dans une maison mais également dans mon ASB mais tout deux on se la verdure il sort au moins 4 fois par semaines'
+ "Elle boit l'eau au robinet.  Elle est très capricieuse"
+ 'Ne sortent pas. Donc pas de capture d animeaux'
+ "Elle n'a peur de rien ni de personne même l'aspirateur elle essaye de le frapper à coup de patte 😂"
+ "Pas de sortie en extérieur, enclos pas encore disponible, R'Mione est la future 1ère maman d'un elevage de chat de race British Longhair"
+ 'Notre chatet est attacheé lorsqu elle est dehors elle peut cependant gripper dans un arbre .. il y un axe routier à qq mètres de la maison on a peur qu elle aille sur cet axe'
+ 'Idem que pour sa sœur axe routier près de notre maison elle est attachée lorsqu elle est dehors mais peut se déplacer jouer sans les arbres la haie ..'
+ "Pour les dernières questions mes réponses ne sont pas à prendre en compte car je n'ai pas d'extérieur et mon chat ne sort pas"
+ "J'habite au 7eme étage. Elle est déjà allée sur le balcon 2 ou 3 fois mais c'est moi qui est peur  quand je la vois passer les pâtes à travers les barreaux. Elle se rassure avec la présence du chien que j'ai depuis 2 mois. Ma chatte à 6 mois, bientôt la stérilisation 🥴"
+ 'Chat d’intérieur'
+ 'Ne nous a 0 ramené une seule bête rien ! Très peureux ne veut pas sortir si nous ne sommes pas dehors'
+ 'Attachée en extérieur avec laisse de 5 m'
+ 'Il ne sort 0 en extérieur sauf avec une laisse' 'Miaule tout le temps'
+ 'Il ne sort pas car il a 16 ans et a des soucis de santé'
+ 'J ai répondu aux 3 dernières questions mais il ne sort 0'
+ 'Sort en laisse dans le jardin'
+ "Il joue avec des petits rongeurs qu'il trouve dehors mais ne les tue pas (il me les ramène vivants dans ma maison)"
+ 'Chat castré et dominant avec les chats extérieur_x000D_\nChasse et proies inconnues du fait d absence de jardin mais sort dans un parc arrière'
+ 'Réponse pour l TUV, mon EUR est à l opposé'
+ "Il s'agit d'un chat qui ne sort que sous surveillance 1h max par jour donc pas la possibilité de chasser mais très curieuse qd elle entend un oiseau par exemple"
+ "Chat d'intérieur, n'a 0 vu une souris pour autant sa souris jouet, il l'utilise comme une vrai C 'est marrant."
+ "Il n'a un peu peur d'aller dehors quand je suis pas avec lui"
+ 'Comme mon chaton ne sort pas, impossible de dire si il me ramènerait des proies ou pas. Mais au vu de son comportement, je dirais que oui. Une vraie chasseresse de jouets. Elle saute même sur le chien de ma mère haha'
+ 'Curieuse' 'Chat moitié BEN et abissan.' 'Très casanier'
+ "C est le plus jeune de la famille (Il n'a pas encore 1 an). Il a été recueilli non sevré. Il est très vite sorti et nous habitons dans les bois."
+ "n'aime pas quand je m'enferme dans une pièce, les portes doivent restées ouvertes tout le temps"
+ "Je l'ai eue à 1 mois donc de suite sa maman. Actuellement 7 mois et continue à téter au niveau de mon cou. Elle ne peut pas vivre sans moi et moi sans elle. Sommes fusionnelles"
+ "Nous avions 2 chats de la même portée, notre M s'est fait écraser devant chez nous, il y a maintenant 2 ans et demi, depuis sa sœur n'a plus le droit de sortir, et quand elle se sauve.... je le vis très mal, peur qu'elle se fasse écraser à son tour....."
+ 'Les chats ont accès à un enclos extérieur.'
+ 'Il me saute dessus sans raison apparente'
+ "Attaque mon autre chat si je lui donne attention et toujours à l'écoute et sur ses garde lors de son temps de jeu encore une fois attaque mon autre chat si elle ce présente pendant ce temps et est très facilement déconcentré si entend bruit"
+ 'Ouvreuse de porte' 'Extrêmement câline'
+ 'Tres affectueux avec nous2..ne veut voir personne  d autre'
+ 'Il reste en interieur' "D'où vient le chat(don trouve où achat)"
+ 'Très peureux mais il est téméraire' 'Changeant'
+ 'C est une charte recueillie face à mon école. Elle était affamée et battue par les enfants du quartier. Elle n est plus propre dès que sa litière est un peu sale. Très pot de colle avec moi.'
+ 'C est ma "mamy". Elle est née chez moi. Je l ai nourrie au biberon. Elle a vécu 9ans en appartement puis à découvert la maison et ses extérieurs quand on a déménagé (1an après notre arrivée ). Elle revient dès qu on la rappelle. Elle grimpe à la façade comme spiderman pour rentrer par le balcon (mon rez-de-chaussée est niveau rue et mon jardin niveau cave. Le balcon est niveau rez-de-chaussée ). Plutôt discrète la journée et dès que mon bébé est couché elle vient chercher les câlins. Elle commence à se montrer plus avec mon petit garçon (Il va avoir 2ans, il est moins "brute" que plus petit._x000D_\nC est la dernière qui me reste en "chartreuse". J avais la maman (morte d une tumeur à l estomac à 9ans et son frère, mort d un cancer des voies respiratoires à 8ans).'
+ "Concernant la prédation, mon chat n'est pas un bon cas à étudier, c'est plutôt une moule..😉"
+ 'Ne sort qu’en laisse dans le jardin ou accès à l’air libre sur le balcon.'
+ "Difficile de répondre à certaines questions, j'ai focalisé sur la personnalité de Calie vue que j'en ai 2. Dans son comportement elle est extrêmement fusionnel, possessive et câline envers moi. Elle me suit partout, et lorsque nous sommes en temps calme les dodos ect elle a besoin de me toucher en permanence ( je l'ai seuvré elle et sa sœur car leur maman est décédé. Par contre avec les autres elle est très distante, pas câline, s interpose entre nous, elle impose sa place. Sa sœur tout au contraire elle va vers tous le monde, caline tout le monde. Calie non, ce n'est que moi et un peu mon et ma meilleure amie"
+ 'F stérilisée obèse' 'ne sort pas'
+ 'Mon chat a un gps weenect donc je ne le perd pas 🙂'
+ 'Minette agee très chasseuse plus jeune dr préférence les oiseaux mais a ce jour âgée ne sort plus beaucoup et ne chasse plus vit en compagnie de un chien malinois mais c est elle qui domine'
+ "Vit toujours en intérieur, va 0 dehors, joue beaucoup avec moi et les chiens, elle cherche à aller dehors quand je suis trop longtemps dehors idem il faut qu'elle me suive partout dans la maison. Elle a une dizaine de jouets, un arbre à chat, drix litières avec leur tapis."
+ 'Mon chat ne sort pas donc il ne chasse pas mais il me porte des souris ou des oiseauxen jouets'
+ "Il ne chasse pas à l'extérieur mais à des moment de chasse avec le jeu"
+ 'Il attrape des insectes (araignée, mouches, etc)'
+ 'Étant encore chaton il est en découverte d’où son 1 instinct de chasse'
+ 'Il ne ronronne pas ... et il est très nerveux , même après plus de 2 mois avec nous ...'
+ 'Elle ne sort que sur la terrasse. Elle me chasse des pailles, des coton tiges et même des tampons hygiéniques  propres directement dans le tiroir. Elle chasse aussi tous les objets avec des plumes et  me les apporte en cadeau.'
+ "Domine 2 chiennes a la maison c'est la maîtresse des lieux !"
+ "Elle a l'instinct sauvage et je pense que dès que j'aurai un jardin elle chassera énormément c'est viscérale chez elle. J'ai un chat végétarien et une chatte sauvage 😻"
+ 'Adore chasser les sauterelles'
+ 'Mon chat vit du mardi au vendredi en appartement et ne sort pas, du vendredi soir au lundi soir dans une maison de campagne où il sort beaucoup'
+ 'Mon chat ne sort que pour des balades en laisse.'
+ 'C’est un chat chien ._x000D_\nElle vient me voir à la porte quand je rentre du travail.elle ramène les objets .'
+ 'A appris des tours (donner la patte, sauter dans les bras...)'
+ 'Très intelligent dominant avec les autres mais adorable avec nous adulte comme enfants et tout autre personne venant chez moi.'
+ 'elle ne peut pas aller loin, harnais et très longue laisse'
+ 'Ultra calin' 'Chat maladroit. Chaton plat à la naissance.'
+ 'Ma chatte tue les araignées et les insectes et les mange'
+ 'Elle a 11 ans et a toujours été comme ça' 'Bavard'
+ 'Très exclusive envers nous, n’aime pas les étrangers. Adorable et câline avec moi, très joueuse avec mon compagnon. Dors souvent voir tout le temps avec nous. A des comportements limite cânins.'
+ 'A vécu des 3 premières années en appartement donc ne connaissait pas la nature'
+ 'Elle parle miaulement differents fonction des situation'
+ 'Tous les autres chassent mais pas Lucie !'
+ 'Il ne chasse que les vers de terre'
+ 'Race : mau égyptien - particularité : aveugle' 'Sauvage'
+ "Mon chat vie uniquement en intérieur, il est sorti régulièrement en harnais mais n'a pas d'occasion de chasser de vrai proies"
+ 'Je voulais seulement mentionner que mon chat ne  va pas dehors parce que j’ai déjà perdu un chat qui s’est fait manger par un pécan donc je ne veux pas prendre de chance.'
+ 'Aime beaucoup joué'
+ 'Depuis notre déménagement intermédiaire de R à ville puis à nouveau R, elle est craintive et ne sort pas à plus de 2 m de la baie du salon .'
+ "mon chat a l'instinct de prédation quand il joue (souris, plumeaux, laser...)"
+ "Ils ont accès à l'extérieur mais dans un enclos"
+ "Il ne boit qu'au robinet aime sortir sur la pluie et a passé les 3 premiers mois de sa vie dans un jardin, ensuite 4 ans en appartement et maintenant en maison."
+ 'Il arrive de la ville' "Chat d'intérieur"
+ 'Mon chat capture des insectes et lézards régulièrement (insectes tous les jours et lézards de temps en temps).'
+ "Chatte abandonnée vivant uniquement à l'extérieur, comme 3 autres des petits protégés qui ne s'éloignent que rarement de l'habitation. Ils vivent dans le jardin et surveillent le poulailler 😊_x000D_\n"
+ 'Elle a 17 ans. Quand elle était jeune, c était une redoutable chasseuse...'
+ "Mes chats ne sortent pas mais adorent jouer avec des plumeaux et d'autres plumes suspendu"
+ "C'est un enfoiré qui jette des trucs au sol pour attirer l'attention. Il joue les indépendants mais ne supporte pas la solitude sans humain."
+ 'Mon tout petit est un chat noir gouttière et d’intérieur'
+ 'Il est très affectueux.  Mais surtout il est toujours avec nous peut importe ou nous allons.'
+ "Elle est têtu quand elle veut quelque chose elle l'obtient de  otre part mais aussi des autres chats. Personnes ne lui refuse rien, sinon de toute façon elle reviendra jusqu'a obtenir ce qu'elle veut. C'est ta 1er maman de mon élevage, elle est unique, c'est miss Flory'ann"
+ "J'ai 3 chats, 1 ORI de 14 ans et 2 orientaux (un gris et un noir) de 4 ans, comme ils ne sortent pas à l'extérieur, ils chassent leurs jouets ou se pourchassent entre eux. Ils sont passablement actif et ne surportent pas d'être seul sans leurs humains. Si on les ignore, ils font des mauvais coup en nous regardant espérant attirer notre attention pour des calins."
+ "Chat errant recueilli il n'y a peu de temps donc à part avec moi très peureux des humains, et sur ses proies je ne peux pas être très sûre de mes réponses"
+ "Elle est en cours de transition pour sortir en extérieur c'est juste qu'elle vient d'une association d'animaux"
+ "comme il s'agit d'un RAG de 7 mois elle ne va pas à l'extérieur donc pas de contacts avec d'autres chats. Dans le cadre de la pandémie nous ne voyons personne mais je pense qu'elle serait amicale."
+ 'A ses rituels «\xa0protecteur\xa0» ca toujours dormir en même temps que bebe que ce soit pour la sieste ou le soir, veille dessus sans 0 entrer dans le berceau'
+ 'Pour le moment elle n est sortie qu une fois et a passé sa journée perchée dans nos haies. Donc nous ne savons pas encore sa réaction à l extérieur. Nous allons te essayer d ici quelques semaines (elle n est chez nous que depuis 4 mois)'
+ 'Affectueux mais mort au bout de 2minutes de caresse...'
+ 'Comprend une soixantaine de mots'
+ 'Ne sort pas car risque de prendre froid / coup de soleil de par sa nudité . chasse le gibier de la maison : araignée , mouche etc'
+ "Je ne sais pas si c'est du fait qu'il a grandit dans un appartement mais il ne chasse pas beaucoup"
+ 'Ma PERe sort de la maison que depuis quelques mois, je viens d installer la chatière donc peut-être qu elle va chasser à la belle saison'
+ 'Elle ne sort pas, elle a peur' 'Il ne sort pas, a peur'
+ 'Mon chat ne veut pas sortir ni avoir de contact avec les 5 autres chats du foyer._x000D_\nLes autres sont bien plus souvent en extérieur, pour ne pas dire tout le temps, et ramènent souvent des oiseaux et souris'
+ "son extérieur n'est que le balcon. des oiseaux viennent y manger des graines. ce chat est légèrement handicapé des pattes, ne va pas en hauteur"
+ "son extérieur n'est que le balcon. des oiseaux viennent y manger des graines"
+ 'Très envahissantes toutes les 2, mais en rien gênant'
+ 'Le SPH ne peut sortir en extérieur ou sous surveillance avec un harnet. Du coup il ne chasse paw'
+ 'Chat adopté à quelques jours, nourri par mes soins au biberon. Chat extrêmement fusionnel.'
+ "Elle a été élevée par l'homme depuis ses deux semaines"
+ 'Amical avec un seul maître' "Rapporte, suit l'humain en permanence"
+ 'Elle ne sort 0'
+ 'Il a réussit à tuer un oiseau qui était venu se poser sur le rebord de la porte.'
+ 'Capture des insectes (mouches, fourmis, araignées...)'
+ "Encore trop jeune pour chasser mais est très intéressée par les oiseaux. Joue avec une souris et un nounours qu' elle ramène au pied..."
+ "Chatte noire qui a été trouvé errante à l'âge de 5 semaines très facilement effrayée par les bruits de véhicules. Elle était propre en quelques jours par elle-même et faisait déjà sa toilette seule."
+ 'A besoin de la compagnie d’un autre chat en plus de ses maîtres'
+ 'Mon chat n’a pas accès à l’extérieur'
+ "Chat d'intérieur donc certaine question ne lui conviennent pas"
+ 'De temps en temps,  il nous attrape la main pour la mordiller'
+ 'Des chats nus ne sortent presque 0 !'
+ 'Il joue à cache cache avec nous. Et chaque soir il miaule d’une façon particulière quand nous sommes tous couchés: et à chaque fois nous trouves une souris peluche à côté de lui. Ça ressemble à une offrande.'
+ 'Il est semi sauvage' 'Il s’adapte à outre situation, facile à vivre ,'
+ 'Très câlin et adore être collée à moi'
+ 'Sans race mais apparence SBI. Ouvre toutes les portes, regarde la télé et roucoule plutôt que miaule'
+ 'Comme elle ne sort pas elle m apporte sa peluche souris ou sa balle  elle est trop marrante quant elle me le fait. ❣️'
+ 'Il sort en harnais....'
+ 'Elle est en harnais....trop peur qu elle s eloigne...c est une bonne chaseuse....très....féline....par rapport au PER'
+ 'mon chat a 17ans, son caractère à beaucoup changé, il est en bonne santé mais il a pris sa retraite en ce qui concerne la chasse, et défendre son territoire!!'
+ "Ne sors 0, en a pourtant la possibilité, juste un peu l'été."
+ "Il est très amical avec les gens qu'il connait, mais très effrayé par ceux qu'il ne connait pas."
+ 'C est un chat câlin chasseur modérément'
+ 'Aime s occuper de bébé  chats .très protecteur envers eux et joueur'
+ "Mon chat a été abandonné, dès qu'il est entré dans l'appartement il n'a 0 voulu retourner dehors"
+ 'Mon chat me ramène très souvent des petits mammifères et je l’ai surprise une fois avec un pigeon pour le moment. _x000D_\nElle est très joueuse et mon autre chat l’entraîne à chasser (aussi une F). Toutes les deux très câlines et affectueuses, elles sont aussi très chasseuses et mangent en entier la plupart du temps ce qu’elles ont attrapé (et pourtant leurs gamelles sont à ras bord constamment avec des croquettes et de la pâtée de qualité sans céréales etc)._x000D_\nElles adorent les souris, mulots, musaraignes, rats des champs et taupes.'
+ "Chat non chasseur, contrairement aux 2 autres Fs chatte que j'ai."
+ "Il vit depuis toujours avec d'autre animaux type rongeurs, oiseau, poisson et poule et ne cherche pas a les attaquer"
+ "Passage d'appartement en maison recent, il ne sort donc pas encore sans surveillance."
+ 'Caractère "sauvage" se révélant par des sorties seulement nocturnes et des comportements de vigilance avant de boire ou manger très typés.'
+ 'Mon chat ne sort pas'
+ 'Il est dominant avec les plus gros que lui mais bienveillant avec les plus petits.'
+ 'Mal sevré'
+ 'C est un chat qui se prend pour un enfant. Tetu et puissant en force. Il a du etre un autre animal car il mange fruits et legumes assez souvent.'
+ 'Il ne va pas à l’extérieur. Il reste dans la maison'
+ 'Chat très peureux mais gentil comme tout'
+ 'La chasse a lieu surtout en été et au printemps'
+ "Mon chat souffre de dépression, suite à un déménagement elle est sortie, à été recueuillie par des voisins ( 2 maisons plus bas) qui ne l'ont pas correctement traitée, laissée enfermée. Un jour ils l'ont emmené chez le véto et ont 'bien voulu' me la rendre. Je l'ai récupérée, maigre pleine de puces, de vers et depuis elle n'a jmais été la même. Le véto envisage de la mettre sur anti dépresseur afin qu'elle sorte de nouveau de la maison. Mes réponses sont donc un peu faussées, j'ai répondu en fonction du compprtement actuel de mon chat."
+ 'Notre ne sort pas'
+ 'Mon chat ramène tout ce que je lui lance. Par exemple : un bouchon de stylo, une attache rapide,... Sont préférer reste l’es chouchou ( élastique à cheveux) dès qu’une invitée est à la maison, mon chat peut fouiller dans sont sac à mains prendre dès chouchou dedans et nous les apporter pour qu’on lui lance et qu’elle le ramène'
+ "c'est un chat adopté via une asso , depuis petit il n'a pas été habitué à sortir donc il ne demande pas à sortir"
+ "Difficile de donner des réponses justes car mes animaux n'ont pas le moyen de sortir"
+ 'Elle ne sort pas de l’appartement pour le moment, elle n’est pas encore pucée, mais surveille les oiseaux par la fenêtre'
+ 'taquin' 'Lorsque cela est possible nous sauvons ces proies'
+ 'Jaloux de mon chat qui est une minette castree qui était à la maison lui'
+ 'Sournois avec les autres chats pour essayer de contester la hiérarchie'
+ 'Je suis en réa de jardin et il y a un parc pour enfant avec animaux (chèvres, lapins, poules...) à côté de chez moi il passe sa vie là bas, il est la mascotte du parc et fait des câlins toute la journée aux gens qui y viennent. Il rentre un jour sur 2 chez moi et même s’il est adorable avec tout le monde il est très dominant et n’accepte pas mon autre petite chatte.'
+ 'Des pipis de marquage dans toute la maison et dans tout le jardin, sur la porte d entrée des voisins, sur les voitures..._x000D_\nCalla29@hotmail.fr'
+ 'Le jardin est entièrement clos. Il ne peut pas sortir'
+ 'Un adorable chat rempli d amour pour moi'
+ "Elle me ramène plus souvent des cadeaux depuis notre déménagement et est devenue plus câliné. Elle a été stérilisée à l'âge adulte et a une allure fine."
+ 'dominant et bagarreur envers les autres chats du quartier, mais pas envers ceux du foyer'
+ 'Il capture aussi des chauves souris des serpents  et parfois même des pigeons'
+ "C'est un chat rescapé de la rue. Il aime la présence des humains et son confort."
+ 'J’ai un jardin mais le chat sort un peu moins en hiver'
+ 'Il est adorable'
+ 'Aimes les caresses au niveau de la tête sous la mâchoire les oreilles. N aime pas qu on lui caresse le dos s agace vite .'
+ "Capture également des gros insectes (à déjà ramené un gros criquet), gentil avec certains chats du quartier mais bagarreur avec d'autres, très câlin avec nous aime beaucoup dormir avec nous"
+ 'Hyper collant et ne reste pas dans une pièce sans nous même pour dormir'
+ 'Ritualisée'
+ "Minette  sauvage recueilli dans la rue, ne nous lâche plus depuis qu'elle est chez nous😍, m'attend sur ma boîte à lettre tout les soirs à 18h et on rentre toujours ensemble."
+ 'Il capture en revanche très souvent des papillons, papillons de nuit, sauterelles, lézards presque tous les jours en période estivale...'
+ 'C’est un ORI/TUV'
+ "Très intéressé par ce que nous faisons,  il n'est 0 loin de nous!"
+ 'Il ne sort pas seul en extérieur, le balcon est sécurisé avec filet et en extérieur elle est en harnais laisse'
+ 'Il chasse dès qu il voit une bestiole mais il y en a peu en ville'
+ 'Mon chat ne sors pas du tout en exterieur' 'Très bavard 🤣'
+ 'Aime quon lui lance des objets(chouchou à cheveux) pour les ramener'
+ 'il sort dans un enclos extérieur' 'Croisé PER'
+ 'Elle adore les enfants et elle m’est très fidèle'
+ 'Très bon chasseur. Il a capturé 2 souris qui se sont retrouvées chez moi certainement par hasard'
+ "C'est un chat extrêmement joueur. Et très protecteur envers son territoire et en vers nous, peut devenir agressif envers un invité si un membre de notre famille montre des signes de tristesse : pleurs ou gloussement qui ressembler à des sanglots(pour lui)."
+ 'TR7S CALINE  VOIRE FUSIONNELLE' 'D’une grande présence.'
+ "Prédation plus importante en vacances, l'été en camping !"
+ 'Son surnom : patachon.  Il est malhabile.'
+ "C'est une précieuse princesse"
+ 'Pas eu de maman chat (orphelin) donc sevrage différent de la norme'
+ 'Prédateur depuis l arrivee d un bébé chat afin d assoir sa dominance'
+ 'Mon chat me mord tous les jours 1 à 2 fois par jour plus ou moins affectueusement'
+ 'A 15 ans'
+ "Il vit également dans un autre foyer qu'il a choisi seul à environs 50m de chez nous"
+ 'Elle préfère les petits lézards et les sauterelles'
+ 'Chat made in maison'
+ 'Elle a très peur des enfants au point de cracher. Concernant les adultes, elle est tout simplement timide avec eux.'
+ 'Déteste tous les animaux chez lui, il est territoriale'
+ 'Mes chats sortent que dans le jardin et ne vont pas en dehors .'
+ 'peureux'
+ 'Très câline, sait se faire comprendre et comprend le langage de certains gestes'
+ 'C est un chat qui a le caractère d un chien'
+ 'Mes chats sont tous positifs Fiv ils ne sortent donc 0 et n'
+ 'Chasse les insectes' 'Extérieur sécurisé clos'
+ 'Elle a un grand intérêt pour les insectes'
+ "chat qui a vécu en appartement durant 13 ans avant d'être en maison individuelle avec jardin"
+ 'Âgée de 6 mois, pas encore sortie en extérieur. Co habite avec une chienne malinois, sont très complices, très joueuses'
+ "C'est encore un bébé,  donc il n'a pas été dehors, très joueur et câlin,  vrai caractère SBI,  très parleur"
+ "C'est un chat qui ne sort pas mais il est vachement joueur, je compte pas le nombre de souris, poisson boule qu'il a est qu'il démonte._x000D_\nIl a même une truite en peluche qu'il m'a éventré 😂"
+ 'C’est une chatte Burmese, elle a accès à 2 grandes terrasses qui sont protégées par des filets , elle peut observer mais pas s’échapper.'
+ 'Chat très possessif avec son maître, sociable avec notre chiant et dominant envers lui. Chat très expressif, c’est une race qui aime qu’on lui parle'
+ "Elle n'est Pas encore sortie librement, son sens de la prédation n'a Pas encore été mis à l'épreuve !"
+ 'Elle peut sortir en harnais au jardin aux beaux jours lorsque j y suis ...1 à 3 h 5 mètres de longe'
+ 'elle ne sort pas'
+ "0 chat n'est le même j'ai 10 chats tout race confondu, certains sorte d'autre non"
+ 'Elle sort en jardin clos' 'joue avec les mouches'
+ 'Il chasse les mouches et les moucherons' 'Voleuse' 'Chasse les mouches'
+ "ne supporte pas d'etre seule..."
+ 'Mon chat sort en jardin sécurisé et délimité' 'Joueur'
+ 'Le MCO est un chat chien 🐕'
+ 'Chats norvégiens qui vivent en maison et enclos extérieur accolé donc pas de sortie sans surveillance et pas de prédation possible _x000D_\nChats calmes très affectueux mais savent être indépendants car vivent à 3'
+ 'Proche du maître _x000D_\nSi je change de pièce et qu il dort dans une autre pièce il va venir il faut qu il me voit'
+ 'J ai un extérieur clôturé, a l abri  bref une chatterie aménagée et sans danger'
+ 'Il n’attrape pas d’animaux car je le tiens en harnais. Sinon il monte aux arbres et cris jusqu’à qu’on vienne le chercher !!'
+ "C'est un chat pot de colle, chat-chien" 'Race exotic shorthair'
+ 'Aime les sorties avec le harnais, connait beaucouo de conignes'
+ "sa passion première est de pouvoir se bagarrer avec d'autres chats"
+ "Pour l'instant, il n'a accès qu'au balcon et n'a pas encore trouvé comment descendre contrairement a ma plus agé qui non seulement descent comme ceux des voisin mais réussi a remonter alors que les autres ne le peuvent pas."
+ 'Il sort en enclos et que quelques fois quand le temps le permet'
+ 'Sort uniquement en enclos et quand le temps le permet'
+ 'C’est mon premier BEN  donc je découvre ce bébé chat. Sort souvent les griffes saute partout et au niveau digestif très fragile'
+ "Chatte ayant accès à l'extérieur mais dans un enclos collé à la maison. Pas de chasse possible à part les insectes volants"
+ "Chat ayant accès à l'extérieur mais dans un enclos collé à la maison. Pas de chasse possible à part les insectes volants"
+ 'Mon chat a un enclos extérieur ce sont les autres chats qui lui ramènent les souris pour que Mme puisse jouer'
+ 'Je promène mon chat en laisse, et il a compte instagram, venez le voir : moka_cats_'
+ 'pour l instant trop jeune 5mois....j ai l intention de lui aménager un enclos sécurisé car nous avons de la place 2000m2 de terrain à côté de champs. concernant les instincts de prédation on en voit les manifestations le matin, le soir et parfois la nuit il saute partout, court en traversant toute la maison, il fait des dérapages,  etc.....'
+ "Le stress de l'environnement: ma RAG n'apprécie Pas la compagnie de mes enfants elle en a peur"
+ 'Capture fréquemment des insectes'
+ 'Tres affectueuse, tres joueuse,se comporte comme un petit chien.'
+ 'Super pot de colle car il est adopté' 'Adore capturer les insectes'
+ 'Il pique les proies de notre autre chat'
+ 'le seul extérieur de mes chats est une loggia ou ils aiment observer les oiseaux'
+ 'mon chat sort juste en harnais et seulement quelques fois par année'
+ 'Trop jeune, sorti dehors depuis qques semaines'
+ 'il n en a que pour ma fille, il est ultra collant, possessif et il a peur de tout le monde'
+ 'Il nous lèche beaucoup. Lorsqu’il fait froid ou pleut elle ne sort pas. Ne sors 0 la nuit.'
+ 'Joueuse_x000D_\n'
+ 'C est une British longhair vous n avez mis que le shorthair dans la listed des races'
+ 'Chat en sous poids, ne sort pas sans harnais, donc pas de chasse effective'
+ 'Ne sors pas seule. N est pas intéressée par l extérieur si il n y a personne dehors avec elle.'
+ 'Non' "Mon chat est promené en harnais. Je l'aime fort."
+ 'Il passe la nuit dehors et toute la journée dort.'
+ 'Ne sort que au harnais.'
+ 'Mon chat a des goûts de luxe en nourriture humide : il préfère la mousse que la gelée. Je lui ai appris à s’assoir et à me suivre.'
+ 'Tranquille et très très doux calme pas du tout hyperactif'
+ 'Très peureux mais attire par les enfants'
+ 'Chat très très attaché à son maître' 'C’est un chat d’intérieur'
+ 'Pic d’énergie le soir vient au pied quand on va à table pour manger et avoir sa part mdr viens quand on l’appel , elle a SA place sur le canapé ne va pas dehors si on y va'
+ "C'est un petit chat de 6 mois, c'est pour ça qu'il ne va pas trop encore dehors. Mais je veux qu'il profite de l'extérieur j'attends juste la castration."
+ 'Elle ne miaule pas. Elle s habitue facilement à toute nouveauté.'
+ "Notre petite chatte malgré qu'elle aille de plus en plus dehors reste assez peureuse des bruits extérieurs (tondeuse, tracteur, etc)"
+ 'Il miaule beaucoup quand on lui parle et me suit partout'
+ 'Elle n’est pas encore allée à l’extérieur'
+ "prédation élevée (selon les critères ci-dessus) sur les lézards et geckos et sur les insectes (criquets et papillons) pendant les mois d'avril à septembre (quasiment nul le reste de l'année)"
+ "Bon chasseur d'insectes à l'intérieur de la maison, chasserai probablement autre chose s'il pouvait sortir"
+ "Chat d'élevage non castré"
+ "Mon chat ayant le fiv n'a pas le droit de sortir suite au risque de contamination important"
+ "C'est un British long hair"
+ 'Venant de la SPA, a été enfermée dans une cave'
+ 'C’est un Mau égyptien, race plutôt calme et d’intérieur'
+ 'C est un chat d intérieur pourvu d’une chatterie extérieure'
+ 'Il es jaloux de son frère quand on le caresse et il aime attaquer les mains avec les griffe je pense que c’est un jeux pour lui et ne se rend pas compte qu’il fait mal parfois'
+ 'Trop mignon, gentil, actif, joueur'
+ 'Ne peut pas chasser car en appartement, la nature ce sera pour dans 3 mois 😊'
+ 'Pour information, ma chatte ne sort pas car elle a peur des bruits à l’extérieur (même avec la baie vitrée ouverte sur le balcon elle ne sort pas).'
+ "Je promène mon chat au parc au moins 2 fois par semaine_x000D_\n_x000D_\nIl n'a NR reconnu mais il serait descendent d'un animal sauvage (type serval)_x000D_\n_x000D_\nIl a été suivie par un éthologue qui l'a diagnostic autiste"
+ 'Mon chat ne sort pas à l’extérieur car trop de risques (accident, vol car chat de race)'
+ 'Mon chat sort mais attaché comme il y a une grande route a côté de la maison. Mais il le vit très bien. Mais par contre il veut toujours jouer avec l autre chate de la maison 8 ans mais elle ne veut pas .'
+ 'Le comportement de prédation de mon chat est beaucoup plus élevé que ça n’en a l’air dans mes dernières réponses : _x000D_\n_x000D_\nEn effet, j’ai fait installé un grillage sur ma terrasse pour que les pigeons et autres oiseaux ne puissent pas rentrer et qu’il ne puisse pas les capturer.'
+ 'Il sait ouvrir les portes, en sautant sur la poignée 😂'
+ "Instinct de prédation plutôt développé avec ses jouets d'intérieur car il ne sort pas beaucoup et pas longtemps."
+ 'Madame parle beaucoup et à tout heure 😅🤣'
+ 'Il et très intéressé par les volatile et insecte'
+ "Mes 2 chattes noirs ont été abandonnée au près d'un ruisseau . Mon conjoint et moi les avons sauvées, soignée. Certaines chose est plus difficile a percevoir; car les 2 autres chattes sont arrivée plus tard."
+ 'Très "bavard"'
+ "Shiva est arrivée à 5.5 ans et Simba était déjà là Elle a tout fait pour qu'on la garde (c'est un sauvetage) et n'a montré son caractère bien trempé qu'au bout d'un an ou deux C'est un amour de chatounette"
+ "Simba est un froussard qui ne tolère qu'un homme : mon compagnon Il est très joueur et comment dire, hyperactif et super miauleur Il est arrivé à 11 semaines et a tout partagé avec Shiva( qui aura 11 ans en août le jour de mes 50) alors qu'il était là depuis 8 mois  Ils se tolèrent bien même si parfois ils sont un peu jaloux de mon affection La nuit c'est le premier des deux qui arrive qui a la meilleure place : entre mes mollets et genoux Dernière petite chose, ils ont été fantastiques avec la demi BEN que nous avons accueillie quelques mois Les chats noirs c'est lesplusbeauxlesplusgentilslesmeilleursépicétou _x000D_\nLa bonne journée"
+ 'il a été élevé avec des chiens donc réagit comme un chien'
+ 'Chat qui est promené en laisse et harnais et qui reste à domicile dehors également en laisse et harnais toute la journée'
+ "J'ai 2 CHA la maman et la fille elles sont très affectueuses"
+ 'Il chasse beaucoup les insectes (mouches, coccinelles, punaises, guêpes, etc)'
+ 'A défaut de sortie, chasse insecte (moustique "cousin", mouche) très fréquemment'
+ 'Elle chasse les insectes en tout genre dans l’appartement'
+ 'Un chat qui sent tout et qui sait tout ce qui se passe et s’occupe de nos soucis .....'
+ 'Ma chatte sort, mais uniquement en laisse, ce qui ne lui permet pas de chasser. Mais son instinct est bien présent.'
+ 'Elle joue très lgt et très souvent'
+ 'Mon chaton ne ramène encore pas de proies car il n’a pas vraiment été confronté à elles. En revanche on chasse les insectes'
+ 'Capture tout les insectes'
+ 'Bien que sur une terrasse, il n a pas accès aux oiseaux ou souris. Mais ne demande qu à chasser tout se qui pourrait se poser sur le balcon'
+ "1- Lorsque je coche la case du milieu c'est plutôt qu'Orphée s'en contrefiche ou ça ne la concerne pas (et non Pas d'avis)_x000D_\n2- Puisqu'elle vit en appartement, même si autour il y a de la nature, elle n'y va 0 et donc, pas possibilité pour elle de capturer des oiseaux ou des mammifères... (je le précise pour que votre sondage ne soit pas faussé...)_x000D_\n3- Lorsque vous estimez la durée de jeu, observation, câlins, etc. il me semble que entre 20mn et 1 h serait plutôt 2 / Entre 1 h et 2 h serait plutôt 3 / et au-dessus de 2 h serait plutôt Très élevée_x000D_\n4- Vous avez omis tout l'aspect Santé (maladies, petits bobos, récurrents ou pas...) et tout le côté Alimentation (ce qu'ils mangent, comment, fréquence, lieu, etc.)_x000D_\n5- J'aurais -personnellement- posé une dernière question ouverte : quel est le principal défaut de votre chat / quelle en est sa principale qualité_x000D_\n6- Bonne chance ! Et plein de plaisir !"
+ "Il est né chez moi donc il a prit l'habitude très vite des bambins des chiens etc et a eu accès à l'extérieur rapidement. Il a toujours été bien portant et n'est pas castré."
+ 'Maladroit'
+ 'Je ne souhaite pas que nos chats sortent pour deux raisons : le vol et la protection des oiseaux du jardin, que je nourris par ailleurs. _x000D_\n'
+ "Il n'arrête pas de parler et me suit comme mon ombre"
+ 'Chatte semie sauvage trouvée, peureuse mais affectueuse juste avec ses maîtres'
+ 'Préfère chasser les coccinelles'
+ "Il va dehors mais n'est pas en liberté grâce à un système anti-fugue. (Collier et fil de périmètre enterré)"
+ "Elle va dehors mais n'est pas en liberté grâce à un système anti-fugue ( collier et fil enterré)"
+ 'Assez craintif quand elle ne connais pas la personne du à son premier mois de vie je l ai sauvez à 1mois et demi de son propriétaire qui voulais la tuer'
+ 'Mes chats ne chassent pas beaucoup car ils ont un grand enclos dans le jardin.'
+ 'Un héros'
+ 'A la fois indépendante et chat-chien (elle me suit partout). Préfère jouer avec moi que partir chasser oiseaux et mammifères même si sa balade le soir est sacrée. Mais elle déteste rester seule dehors trop longtemps. Préfère être tranquille à la maison.'
+ 'C’est un vrai chat-chien qui me suit partout. Quand il fait beau, peut passer la majorité de la journée dans le jardin (mais 0 au-delà) a observer les feuilles, les insectes et les oiseaux voler. Mais aime faire beaucoup d’aller-retour entre la maison et le jardin. Ne sort pas le soir.'
+ '0 intérêt pour la nourriture autre que des croquettes et ce depuis toujours'
+ 'Mes chats ont une sortie protégé  donc ils n ont pas accès aux oiseaux'
+ "Il se met en chasse mais n'attrape 0 rien"
+ "Avec les 5 chats, pas évident de répondre à toutes les questions donc j'en ai choisi un pour se faire. Il est assez joueur et aussi très très bavard !"
+ "Prononcent des mots et des prénoms suivant la personne envers qui ils s'adressent"
+ 'Surdité,  voilà pourquoi il ne va pas dehors et au bord de la route'
+ 'Mon chat n’a pas accès à l’extérieur.' 'Il attrape des Insectes'
+ 'Il s’agit en fait d’ une F de race exotic short hair, non mentionnée dans la liste'
+ 'Elle sort  en harnais'
+ "Notre chat ne sort seulement qu'en laisse au minimum une fois par semaine en dehors de la maison (nous prenons la voiture et allons dans la nature)"
+ "Reste a l'intérieur et ne tient pas à sortir" 'Chat épileptique'
+ 'Elle parle et roucoule' "Ne boit que de l'eau fraîche... :-D"
+ "Perte du goût de la chasse avec l'âge. Ne sort quasi pas l'hiver mais reste dehors des heures dès que les beaux jours arrivent."
+ 'Adorable'
+ "Craintive avec certains humain pas tout le monde elle les sélectionnes veut chasser des oiseaux mais elle en a peur caline avec moi mais moin avec mon conjoint elle lui demande des calin selon son humeur peur des chien mais se fait respecter par le chien si besoin mais elle fini par le toléré en l'ignorant seulement si il ne lui cherche pas des noise ahah"
+ 'Adopté a la spa adulte, il adore jouer avec les plus d oiseaux que je lui ramène'
+ 'Il "pleure" devant la fenêtre et tortille son arrière-train quand il voit un ou plusieurs oiseaux.'
+ "C'est un chat chien" 'Chat très  joueur' 'Craintif_x000D_\n'
+ 'Elle chasse les mouches et tout les insectes'
+ "Il passe la plupart de ces journée à dormir sur le canapé et n'aime pas trop être déranger pour les câlin et caresse c'est lui qui décide"
+ "Très proche de nous elle n'est 0 seule dans une pièce, elle nous rejoint partout où nous allons dans la maison."
+ 'C est un chat vraiment d intérieur il ne veut pas aller dehors _x000D_\nIl est très attaché à l humain et en est très dépendant c est un pot de colle'
+ 'Je suis éleveuse dérogatoire de SPH j ai 3 Ms ils ont accès au balcon sécurisé et la maison adapté à leurs besoins mais à part les mouches ils ne peuvent pas chasser'
+ "Il capture des petits oiseaux en polystyrène comme si c'étaient des vrais."
+ 'Chat obèse, qui même si elle va à l’extérieur ne se dépense pas du tout'
+ 'Mon chat sort à la laisse dans notre jardin..'
+ 'On a choisi cette race pour son caractère doux  et on le sort en harnais il est trop gentil pour le laisser en liberté on nous le prendrais où il se laisserait attaquer par les autres animaux _x000D_\n_x000D_\n'
+ "À défaut d'oiseau ou de petits mammifères il s'attaque aux insectes et rampants qui s'aventurent dans l'appartement."
+ 'Ronronne en permanence' 'Ne sortant 0, ma chatte ne chasse 0'
+ 'Il ne vient dans la maison que pour manger la plupart du temps, mais peut aussi venir plusieurs jours de suite pour y dormir, avant de reprendre le schéma habituel'
+ "Chat d'intérieur aimant aller sur la terrasse"
+ 'Il ne sort 0 seul et toujours sous haute surveillance'
+ "C'est un gros pépère, qui passe ses journées à dormir depuis tout petit"
+ 'Réclame quand sa gamelle est vide ou quand sa litière est sale.'
+ 'Fait des promenade en suivant son maitre sans laisse'
+ 'Mon chat est un "american short hair", en clair un chat de gouttière du Canada =)'
+ 'Chat sort dans le jardin uniquement sous surveillance.'
+ "J'habite en appartement au 1er étage avec un grand jardin mais mes chats ne sortent pas, je trouve cela trop dangereux (route, personnes malfaisantes, chien,...)"
+ 'J’ai un PER et un British leur caractère se ressemble mais le PER est plus solitaire'
+ 'Mon chat ne va 0 a l extérieur'
+ "Il ne sort pas, donc 2 dernières questions erronées. Il s'en prends aux araignées et insectes divers. Il est dominant avec moi (femme) et dominé avec mon conjoint (homme)"
+ 'Très observateur, et sais communiquer'
+ 'Tres fort en capture de mouches ,papillons et araignées'
+ 'Adore jouer à cache-cache avec moi dans la maison'
+ "Ce questionnaire où est basé sur mon chat qui est avec moi l'autre chat qui m'appartient et j'ai mon père en Auvergne dans une maison individuel et il chasse des mulots très indépendant tes oiseaux aussi chasse."
+ "en fait mon chat ne sort 0 car j'habite au 11 eme étage"
+ 'Mon chat va dans le jardin des que nous ouv ront la véranda mais elle quitte 0 le jardin elle se sauve pas et rentre tout les soirs'
+ 'vit moitié intérieur, moitié enclos extérieur'
+ "Ma birmane ne chasse pas dehors mais possède des doudous (rat Ikea) qu'il promène, plonge dans ses croquettes et son bol d'eau et avec lesquels il joue : léchage, jeux de prédation (comme avec une souris)... _x000D_\nElle joue aussi beaucoup avec ses BENs et partage des moments de douceur."
+ 'Il ne sort pas'
+ 'Mon chat a 2ans et demis et depuis 1 mois il gratte à la porte d’entrée de mon appartement (j’ai un chat d’intérieur) et je n’en connais pas la cause et il miaule beaucoup et cela la nuit _x000D_\nIl ne faisait pas cela avant'
+ 'Il a été abandonné, je ne connais pas le début de sa vie, il est très craintif des choses inconnu (voir même de certaines choses connues) et je pense que son passé à indéniablement influencé son comportement et caractère.'
+ 'Dana'
+ 'Elle appelle et surveille les oiseaux à travers la baie vitrée, son instinct de chasseuse est présent tout de même'
+ "Mon chat sort en laisse, elle attaquerait les oiseaux si je ne l'empêchais pas."
+ 'Hyper sportive !'
+ 'Dominée par une mère qui a mal vécu le départ de ses 6 autres chatons, elle a pris confiance en elle avec l’arrivée d’une chatonne adoptant des attitudes d’agacement quand cette dernière la sollicite trop pour jouer. Par contre elle aime pendant la journée dormir contre sa mère'
+ 'mes chats ne sortent pas'
+ 'elle fait un miaulement particulier quand elle voit une araignée "détecteur d\'araignée"'
+ "C'est pas un chat, c'est un RAG !"
+ 'Mes chats ne sortent pas, donc ça règle la question. En revanche, les mouches, papillons, araignées ou la malheureuse souris qui est rentrée un jour dans la maison ne font en général pas long feu.'
+ "Chat qui ne sort pas, mais elle ne capture pas non plus d'insectes qui pourraient rentrer dans la maison."
+ 'Chat qui ne sort pas, mais attrape tous les insectes qui passent et surveille les oiseaux extérieurs au coin de la véranda avec grand intérêt !'
+ "Chat qui ne sort pas, mais attrape volontiers les insectes (elle n'est pas trop intéressée par les oiseaux extérieurs par contre)"
+ 'Dépendant' "Il ramène des feuilles d'arbre"
+ "C'est une feignasse, elle nous tanne pour qu'on lui ouvre la porte alors qu'elle a une chatière... esclavagisme moderne."
+ 'Chat issu de 2 parents sauvages'
+ 'Cassis est actuellement en appartement _x000D_\nElle est née en appartement mais a vécu 4 ans en Afrique centrale au Cameroun elle est devenue une chasseresse ( lézard rat mulot oiseau etc ) la terreur des chats et chiens et singes ... de retour à paris dans appartement  elle est redevenue un chat de salon 😉_x000D_\nEn gros c est un chat super intelligent qui s adapté à son environnement ++++ ( l opposé de mon autre chat RAG 😉 adorable et inadapté 😉😉😉)'
+ 'Son environnement extérieur : enclos sécurité, il ne peut aller loin bien que l’on soit en maison.'
+ 'Têtu' 'Cht très affectueuse bcp de calin' 'Elle dort sur notre Lit !!!!'
+ 'Est interessé par les proies qu\'il voit par le balconet manque parfois de sauter les chercher.... Sinon joue avec les "proies" en jouet'
+ "Accepte a peu près l'autre chat que j'ai mais n'accepte pas du tout les autres chat extérieur. Avant il sortait beaucoup suite a un soucis chez moi je ne peux plus le laisser sortir. (il demande donc en miaulant) mais quand il sortait il passé par la palissade de la cour pour allez chez les voisins puis a l'extérieur et bouger loin, je pouvais toujours essayer de l'appeler dans ces moment il ne revenait pas. Il revenait quand il avait envie et c'est pas toujours la faim qui le fait revenir."
+ 'Bonjour, alors ma chatte a toujours vécu en forêt grâce à la région où je vivais, depuis +- 6 mois nous vivons à paris où elle n’a plus accès à l’extérieur. Elle n’a pas vraiment été chambouler et ne réclame plus trop à sortir depuis sa stérilisation'
+ "Notre chat ne sort que dans notre jardin et que les 3 mois d'été"
+ 'Mon chat est castré et depuis son comportement à changé... un élément important à prendre en compte sur le comportement des chats !'
+ 'vit en ville avec jardin fermé je l’ai vu attraper un oiseau 1 fois.  sinon il guette les pigeons mais n’a pas d’occasions( trop loin) je peux dire qu’il serait très prédateur mais qu,il a peu d’occasion sauf pour les lézards. que je sauve quand je peux...'
+ "Il est né et à vécu à la société protectrice des animaux jusqu'à 3 mois âgé où nous l avons adopté"
+ 'Ne ronronne pas ne miaule pas'
+ 'L’extérieur auquel elle a accès est uniquement une terrasse sécurisée'
+ "Sur 3 chats, seul l'un d'entre eux chasse et encore,  même pour celui ci cela reste excessivement rare."
+ 'Mon chat sort en extérieur sous notre surveillance uniquement'
+ 'Attentif aux mouvements de ma bouche quand je parle. Et comprends ce que je dis'
+ 'Mon sacré est plutot  pépere et sors uniquement sous surveillance humaine ou en laisse! C’est un vrai prince!'
+ 'Très possessif'
+ 'Il sursaute pour un rien et se justifie quand il se fait interpelé après une bêtise. Il communique en nous regardant dans les yeux mais pas pour quelque chose en particulier...'
+ 'Mon chat ne sort pas du tout en extérieur mais son instinct de chasse est très présent notamment avec tout ses jouets qu\'il "noie" dans sa gamelle d\'eau.'
+ 'Chat qui a été abandonné dans un refuge. Qui ne peux être en contact avec 0 autre félin dû à sa maladie (leucose féline). Connaît peu l’extérieur sauf quand nous le sortons lors des beaux jours: très volontaire pour partir à la découverte mais facilement apeuré au moindre bruit'
+ 'Pipi en dehors de la caisse'
+ 'Milieu rural n a pas voulu se sélectionner'
+ 'Âge de 10 mois, il cohabite pacifiquement avec une minette de 17 ans.'
+ "C'est un hyghland lynx qui a plutôt caractère d'un chien c'est spécifique à la race ramène les jouets fait la fête quand vous arrivez etc"
+ 'Ramène rarement des lievraux' 'Très collante et dort toujours avec moi'
+ "il s'agit d'une écaille de tortue avec un caractère très fort . en général c'est le cas de ces robes de chat ...."
+ 'Nous sommes aux Canaries, Lagoon chasse les cucarachas, les mouches, les moustiques'
+ 'il adore être dans la douche, et attrape les gouttes qui tombent.  il dit maman aussi'
+ 'Chat exclusif qui a un seul maitre'
+ "Mais elle adore observée et parlée aux oiseaux qu'elle observe par la fenêtre"
+ 'Mon chat a des rituels, il est réglé comme une horloge_x000D_\n'
+ 'Chat très calme et sortant à l extérieur avec un harnais.'
+ 'Balcon avec gilet! Par contre il attrape beaucoup d’insectes!'
+ 'Miaule souvent à nous'
+ "Chat exclusif qui na qun seul maître et aime que lui .tous les autres humains l'agace"
+ 'Ils courent les quatres après les mouches ou les araignées moustique ect ect ... Ils ne sortent que sur le balcon .'
+ "Pour les chats d'appartements ils chassent tous les insectes possible"
+ 'Chat d’intérieur qui ne sort absolument pas habitué à rester devant une fenêtre ouverte'
+ 'Chat d’intérieur qui ne sort pas' 'Il est fabuleux'
+ 'Il est impossible de chasser de vraies proies mais je joue beaucoup avec mes chats (balles, souris,etc) et ils jouent ensemble ou seuls.'
+ 'Attraper une proie est impossible mais je joue beaucoup avec eux (jouets), ils jouent ensemble aussi. Ils passent du temps sur la terrasse mais,comme cela fait partie du logement, j\'ai mis "ne sort pas"_x000D_\n'
+ 'il n’a pas accès à l’extérieur mais par la fenêtre il tente de chasser les oiseaux'
+ 'Observateur et pot de colle' 'Dominant opressif' 'Très peureuse'
+ 'Notre chat ne sort 0 et ne sait donc pas chasser à sa guise.'
+ 'Chasse les mouches _x000D_\nClaque des dents quand elle voit un oiseau dehors _x000D_\nPas de sortie en extérieur sur le balcon ou sortie en harnais en hiver _x000D_\nElle sort sur le balcon quand il fait chaud/bon avec du soleil _x000D_\nJ’ai deux chats donc j’ai répondu par rapport à la petite F non stérilisé de 3 ans'
+ "Elle surveille les moineaux et les pigeons de la terrasse en faisant des petits cris d'excitation avec sa bouche ! C'est frustrant pour elle !"
+ 'Elle ne capture pas d’animaux puisque nous vivons dans un appartement ,en attique) mais elle a un véritable instinct de chasse. Réagit beaucoup aux oiseaux qui passent. Demande à sortir des qu’elle en voit et essaye de les attraper de la terrasse.'
+ 'Il attrape ses proies, les tue, mais ne les mange que très rarement. Il les abandonne dans le jardin ou les ramène sur la terrasse (cadeau 😉)'
+ "Chat ayant accès à l'extérieur mais seulement dans un enclos collé à la maison. Donc pas de chasse possible à part sur les insectes volants"
+ 'Je laisse mes chats décider du moment des caresses et les 2 que j’ai en ce moment sont assez indépendants.'
+ 'Doux et gentil'
+ "Mon chat est dressé : assit, coucher, NON, vient, et lève la pâte sont des mots qu'il a compris avec le temps."
+ 'Chasseuse de petites bêtes (insectes)' 'Chat de salon'
+ 'Aime grimper, se promène en haut des haies.'
+ "En intérieur il aime chasser tout ce qu'il voit ou entend bouger (surtout sous les couettes, les froissé ment sur les couvertures) il nous ramène également ses jouets pour qu'on lui lance et relance :)"
+ "C'est une chatonne de 3 mois, abyssin, qui adore les bruits de froissement et d'eau. Elle aime boire l'eau chaude du bain ou de la douche. Elle miaule quand on est dans la douche et qu'elle ne peut pas venir avec nous. On l'a pris avec nous dans la douche 2-3 fois, elle est un peu craintive, mais quand on l'enroule dans une serviette pour la sécher, elle adore ça."
+ 'Râleuse'
+ 'Chat d’intérieur sauf l’été il sort avec supervision 30 min par jour'
+ 'Ne se met pas dans des cartons' 'chat tres peureux mais affectueux'
+ 'Elle sort dans un enclos sur ma terrasse'
+ 'Elle sors en enclos sur ma terrasse'
+ 'Elle sors en enclos sur la terrasse'
+ 'Elle vit en appartement et le balcon est sécurisé'
+ 'Joue beaucoup avec son copain le chien'
+ 'A été enlevé trop tôt à sa maman'
+ 'Petit horphelin né dans la nature, venu chez moi vers 4/5 mois'
+ 'Elle est bizarre' 'Il est joki'
+ 'Mon chat a vécu dans 8 environnement différents ( taille de logements différente, extérieur à volonté ou pas, forêt à proximité, jardin communal, etc,.. ) A chaque environnement nous observons un comportements social ( avec ses congénères ) différent et une activité de chasse différente. Il y a donc une faculté d’adaptation importante influant énormément sur son comportement.'
+ 'Elle n aime pas les gens qui ont des chats. Elle communique énormément'
+ "Chat très amoureux de sa maitresse mais les autres personnes il s'en fiche. Rancunier et boudeur quand maman part trop longtemps ( vacance ou hospitalisation .. départ plusieurs jours)"
+ "Sa capacité à venir quand on l'appelle, ou au moins savoir quand on s'adresse à lui : Élevée"
+ 'très observateur des mouettes à la fenêtre'
+ 'Invente des jeux (jette un objet dans de l’eau et va le rechercher) très très jouer'
+ 'Très protecteur amitieux adorable'
+ 'Il adore les câlins et les bisous il est toujours collé à nous un vrai amour'
+ 'Il vit avec un lapin en liberté' 'Chat de caractère anxieux'
+ 'On habite Mayotte'
+ 'Mes chats de race ont un enclos extérieur et celui ci empêche les oiseaux ou petits mammifère de rentrer dedans !'
+ 'La dominance n’existe pas chez le chat !!'
+ 'Chatte très communicante !! Elle me parle beaucoup'
+ 'Chat qui communique beaucoup'
+ 'Elle adore jouer avec sa souris et est très affectueuse.'
+ 'Il demandait à sortir au début et maintenant ne veut même plus sortir je dois le sortir moi-même pour qu’il puisse prendre l’air'
+ 'Sort uniquement sur le balcon sous surveillance. Il ne chasse pas, même les jouets.'
+ 'Il a du mal à faire confiance, il attend de voir les personnes au moins 7 fois avant de s’en approcher. Il en fui même la maison pour ne pas être touché par eux.'
+ "Chatte venant de la rue mais ne cherche plus a chasser depuis qu'elle vie en interieur"
+ "J'habite dans un appartement avec cours, elle aime ce cacher dans les lieux sombre pour mieux attraper ce qu'elle souhaite (en général autre chats). Elle peut être 'sournoise' ce que je vais dire par la c'est qu'elle miaule puis fais une connerie. Ou se cache derriere mon autre chat fait une connerie au moment exact ou mon autre chat va être totalement devant elle. Je ne vois donc que l'autre chat et crois que c'est lui. La femelle et le mâle sont très intelligent mais pas de la même façon."
+ 'Chatte ayant toujours vécue en interieur, pas du tout interessée par la chasse'
+ 'têtu' 'gené' 'Stériliser'
+ 'C’est un chat qui a été abandonné et élevé dans le seul but de procréer. Je l’ai récupéré et depuis 1 an je tente de le faire devenir un chat équilibré et moins craintif. Seulement il a développé une crainte de l’abandon'
+ 'Mon chat ronronne'
+ "C'est un solitaire qui peut partir 6mois et revenir comme une fleur un beau jour sans avoir perdu un gramme ni être blessé"
+ 'Mes chats ne sortent 0' 'Joueur et craintif des humains inconnus'
+ 'Mon chat est un chaton confinement, né  en mai 2020. Difficile avec confinement, couvre-feu et télétravail de le sociabiliser "normalement". Je pense que pour lui c\'est un manque car il serait très curieux de l\'"autre".'
+ 'EURne Écaille de Tortue, affection allant jusqu’à la «\xa0toilette\xa0» des mains régulière à n’importe quelle personne entrant chez nous avec un certains besoin de dormir contre nous.'
+ 'Une boule d amour'
+ "Joue avec ses croquettes, alors qu'elle a beaucoup de jeux/ divertissements."
+ 'Dors 23h par jour, poil long type norvégien, n’apprécie que les humains, sinon à peur de ses «\xa0sœurs\xa0» d’habitat'
+ 'Chatte écaille de tortue, très peureuse de l’inconnue, n’aime pas être porté même par son maître, mais réclame caresse +++ _x000D_\nAime dormir sur le chauffe eau ????????? _x000D_\nMiaule quand elle se retrouve seul pour nous localiser lorsque nous répondons.'
+ 'Au niveau alimentation, il est nourri au cru.'
+ 'Elle mange comme un glouton'
+ "Elle tente d'attraper oiseaux sur la terrasse. Et est tombée 2 fois du 3ème étage."
+ "2 minettes jalouses l'une de l'autre _x000D_\nJ'ai pu remarquer que l'une privatise les hauteurs et l'autre restera au sol. _x000D_\nJe ne vois pas laquelle domine plus l'autre._x000D_\nElles ont été toutes deux opérée et n'ont 0 eu de petits"
+ "Mon chat sort en harnais + laisse ce qui permet une surveillance sur ses actions à l'extérieur."
+ 'Elle a été élever à là mains , mon chat et une extension de moi'
+ "Elle joue avec son jouet, elle nous le ramène pour qu'on lui lance et cour après et le ramène encore, pendant plusieurs heures"
+ 'Elle peut pas attraper d\'oiseaux, ils sont trop loins, mais elle passe beaucoup de temps à les observer en claquant des machoires et en "jappant". Je pense que dans d\'autres conditions de vie ce serait une chasseuse.'
+ 'Elle NSP chasser elle poursuit juste, elle mordille les jambes si on ne lui fait pas de câlin après avoir passer un certain temps à faire des 8 entre les jambes'
+ "Elles chassent les insectes dans la maison et sortent de temps en temps sur le balcon mais l'une d'elle se met sur le rebord du balcon ce qui est dangereux"
+ 'Elle sait se faire comprendre, elle n’aime pas les autres chats sauf la deuxième à la maison (elles sont inséparable)'
+ "Mon chat ne sort sur le balcon que sous ma surveillance, voilà pourquoi il est difficile de parler de son côté 'prédateur'."
+ 'Il est con et relou mais j’y suis attachée'
+ "Mon chat ne vas 0 dehors donc normal qu'il ne capture rien"
+ 'Trop mignon' "Mon chat est un chat d'intérieur"
+ 'Il ne chasse pas il joue avec les insectes' 'Chat hyper affectueux'
+ 'Chaton de 3 mois ne va pas encore dehors'
+ 'Intelligente et très curieuse'
+ 'Elle ne va dehors donc n a 0 rien ramené, cependant, elle passe des heures a regarder par la fenêtre qui donne sur le jardin et fait des petits bruits lorsque qu elle voit des oiseaux._x000D_\nIl n y a pas de question sur l interaction elle d autre animaux qui ne sont pas des chats. La nôtre joue énormément avec notre chien.'
+ 'Très beau'
+ 'Il est actuellement en isolement à cause de la teigne il le supporte bien et reste un amour de chat'
+ 'Il chasse les boules d allu et ses doudous souris. Joue a cache cache, a chat et à va chercher comme un chien. Possede un arbre a chat de 2.40m car afore la hauteur.'
+ 'Elle ne sort que sur le balcon sous sur surveillance. Elle joue énormément seule avec ses jouets. Elle est têtue, affectueuse mais aussi râle ou mord quand on ne fait pas comme elle veut.'
+ "Attrape les souris dès qu'il en voit (rarement car vivon en appartement)"
+ 'Regard très expressif. Il ne lui manque que la parole.'
+ "Jeune chat d'appartement donc il n'a pas l'occasion de chasser quoi que ce soit hormis les moucherons 😂"
+ 'Super affectueux 🤗 super câlins 🤗. Un chat noir 🐈\u200d⬛ c normal.!!!'
+ 'Très câlin et possessif envers moi vis à vis des autres chats et humains'
+ 'Loggia au 5ème étage : mon chat attrape parfois des mouches et elle est super douée ;-)'
+ "Malgré son impossibilité de chasser, ma RAG est prête à tout pour tenter d'attraper le canari, qu'il a fallu mettre en hauteur pour sa protection"
+ 'il a des notions de dressage, il est promené en laisse dans le jardin résidentiel (oui oui c’est pas un chien, c’est bien un chat)'
+ 'Mes chats ne sortent pas du jardin' 'Peureuse'
+ 'Destructrice !! Elle fait ses griffes partout !'
+ 'Mange les mouches, très pratique en été'
+ "En habitant au 4 ème étage avec balcon mon chat a attrapé un moineau alors qu'elle avait 10 ans. Elle arrive sur sa 16eme année, et attrape des petits insectes lents. Genre les punaises."
+ "Je trouve qu'elle n'a pas vraiment l'instinct de chasse"
+ 'Mon chat est une grande "chasseuse" elle chasse les mouches / moustiques ou tout ce qui pourrait voler et une grande joueuse'
+ 'Se cache pour prendre en embuscade le point rouge du laser ou les mouches._x000D_\nAime observer les oiseaux qui volent et des que 1 se pose sur le balcon il est obnubiler par eux'
+ 'Il est rigolo et ridicule et attachant 🤣 un amour de chat mais pas adapté à l extérieur du tout : trouillard debile se mets en danger. Bref un vrai RAG / l opposé de mon autre chat qui est croisé EUR / British shortair ( pour lequel je vais faire une autre questionnaire )'
+ "C'est un grand chasseur de poissons d'argent"
+ 'Pour info : Mon chat est un Toyger. La race est très récente. Il aura un petit frère BEN début mai.'
+ 'Le plus cool des chats' 'Compréhensif'
+ 'Chatte vive  qui saute de partout, et très joueuse avec mes enfants'
+ '2 chats récupérés ds 1 refuge. Ma puce a été maltraitée et mon loulou est tranquille'
+ "Il chasse les insectes car nous n'avons qu'une terrasse"
+ 'Mes chats sortent uniquement sur des terrasses sécurisée avec toiture carrelage etc.  Ils ne peuvent pas y attraper de bestioles.  Peut être 1 lézards et quelques araignées pour une année complète'
+ 'La chose la plus chassée par mes deux chats sont les mouches et les moucherons mais je pense qu’ils rêvent d’attraper un pigeon un jour vu comment ils sont en chasse sur la terrasse. Ayant de chats très différents dont un qui a été battu quand il était chaton c’était difficile de répondre à certaines questions mais pas impossible'
+ 'Miaule souvent'
+ 'Ne sort pas donc ne capture rien mais s’entraîne ts les jours en jouant'
+ "Il n'est pas vraiment du genre prédateur, mais il est curieux face aux autres espèces (par exemple, il se frotte sur mon hérisson). Il est très orgueilleux et fourbe (je l'appelle affectueusement mon petit Drago Malefoy) mais également très affectueux, voir dépendant affectif."
+ 'Très fort pour la chasse aux mouches , papillons et araignées  caractère adorable , pot de colle , câlin , cherche la présence humaine ....'
+ "Il a une maladie auto-immune qui fait qu'il a un traitement à vie tous les jours, traitement dégoûtant qui amplifie ses peurs au quotidien et qui font qu'il refuse d'être pris dans les bras, qu'il a peur de moi."
+ 'Jalouse et possessive' 'Il gratte les portes' 'tres independant'
+ 'Je vis dans une résidence avec cour fermée et mon chat qui NSP attraper un oiseau excelle à la chasse aux mouches'
+ 'Famille d’accueil nous avons récupéré ce chat abandonné dans la rue, il ne cherche pas à sortir dehors il préfère le canapé'
+ 'Adopter à la SPA' 'Très reconnaissante envers moi'
+ "Sa particularité : ses miaulements ! Par moment ça peut être pendant 5 à 10 min très longtemps et très fort. Vraiment curieux, je n'ai 0 vu ça avant chez d'autres chats. Quand c'est comme ça, je vérifie s'il a assez à manger, si la litière est propre ainsi que son eau, sinon j'y pourvois. Mais après, qu'est-ce qu'ils veulent dire ??? Je n'en pas la moindre idée..."
+ 'Petite chatte de 6 ans très peureuse tombée du 4eme étage à 4 moiset demi depuis très très craintive'
+ "Bb chat de 8mois très joueur et aime bien mon autre de 7ans qui lui fait voir les bêtises et s'en occupe comme une maman"
+ "Recueilli à 14 jours, sevré au biberon, très câlin et toujours pour consoler quelqu'un qui ne va pas bien à la maison"
+ 'Il est très très câlin et malgré tout très solitaire'
+ 'Ils sont très voleurs (nourriture) et peuvent être méchant pour en voler'
+ 'Est une pro dans l attrappage de mouche 😂_x000D_\nEt chasse la souris fourrure avec une vraie passion . Rapporte la balle et mange des madeleines'
+ 'Exclusive avec sa maitresse et bébé. Ni son maitre ni les autres personnes ne peuvent l approcher car agressive.'
+ 'Mon chat aime observer les oiseaux de mon balcon mais ne peux pas les attraper.'
+ "Sur le balcon, pas de possibilité d'attraper d'oiseaux ou d'insectes, mais j'ai une grande chasseuse de mouches ! Et elle regarde les oiseaux avec intérêt dans le petit parc visible depuis le balcon !"
+ "Il a un doudou qu'il met tout les soir dans le lit pour dormir avec nous"
+ 'Chaton recupéré à l’âge de 1 mois, élevé au biberon . Il a du mal à canaliser ses réactions, griffe facilement lorsqu’il joue avec nous ,s’attaque à tout ( jambes, pieds, vêtements...)'
+ 'Il adore attraper des plumes au bout d’un fil, il peut jouer pendant des heures à condition qu’elles soient cachées et qu’il entende le bruit, il se met en position d’attente puis saute dessus!'
+ "Simplement préciser que mes chats ne sortent 0. J'habite en centre ville et je ne veux pas qu'ils aillent dehors."
+ 'Empathique'
+ "Mon chat a un petit balcon en béton avec un grillage pour pas qu'il aille dans les gouttières car déjà fait cette freilleur. Une chose es sur il aimerai goûter un oiseau ou deux. Il as tout pleins de jouets un grand arbre à chat pour palier au manque extérieur chose qu'il n'as 0 connu"
+ 'Il est juste extraordinaire!!!'
+ 'Même réponse pour notre deuxième chat qui est un MCO'
+ 'Elle est trop mignonne' 'Les chats avec le balcon' 'Chatte Norvégienne'
+ 'Il communique beaucoup, différents miaulements' 'Ne ronronne 0'
+ 'Attrape les mouches .. les oiseaux sont trop haut pour elle,\xa0«mais les guette sans cesse même dans les arbres'
+ 'Sortie en enclos ds le jardin' 'Les SPH sont très affectueux'
+ 'Il ronronne beaucoup (lol)' 'mon chat est plutôt corpulent'
+ 'Très très chasseuse l’été'
+ 'Nombre d arbres à chats dans la maison .malade svt ou pas .dors avec vous ou pas'
+ 'Malin et un peu voleur' 'Mon chat est hyperactif'
+ "3 chats, 3 caractères complètement différents. L'une est très sociable, les 2 autres sont très craintive. Je pense que c'est de la façon dont on les enleve petits. La mienne est très chat chien. Elle est avec nous quand on va sur le canapé, au pied du lit quand on va se coucher. Est très avare de câlins h24, elle nous suit nous la cuisine, on communique par miaulement ça peut durer 10 min en continu._x000D_\n_x000D_\nLes 2 autre ( celle de ma femme ), qui sont la mère et la sœur de la mienne avant que je me mette en ménage avec ma femme, sont très craintive, impossible de les approcher elles n'aiment pas les câlins, aiment l'isolement, aiment être tranquilles sont un pouf sans qu'on le dérange._x000D_\nJ'imagine qu'elles ont évolué dans un environnement non propice, avant des enfants en bas âge, bcp de bruit et cris et leur comportement n'est pas comme la mienne qui a appris à connaître l'être humain. A aimer la proximité avec l'humain, la communication les câlins pendant des heures sur le canapé._x000D_\n_x000D_\nVoilà :)"
+ 'Concernant la chasse de petits rongeurs, elle nous ramène que le foie'
+ 'Croisé MCO x'
+ "Elle mange ses proies, pourtant la gamelle est pleine de croquettes  mais je pense qu'elle aime la viande crue"
+ 'ils sont tous différents de caractère du calme  au plus   fugueur'
+ 'n a peur de rien, tres amical, on a l impression qu il s en fiche des codes sociaux agressifs'
+ 'dominante qui souhaite etre exclusive sans autre chat, crache souvent sur les autres les intimide et les chasse, caline mais griffe et mord sans prévenir.'
+ 'Mes chats sont les plus beaux =)_x000D_\nBonne chance'
+ 'Aime les chiens plus que les humains'
+ "Quand il est dehors et qu'on l'appel il court nous rejoindre en répondant et est tout content"
+ "Très bon chasseur . Il est craintif des inconnus mai avec nous non. Par contre il change vite Davis c'est lui qui décides des moment caresses ou non"
+ 'Nous suit comme un petit chien' 'Sondage pour Tigrou'
+ 'Très doux et affectueux, mais à mon avis anormalement craintif (bruits, ...)'
+ 'surveille tous ce que je fait' 'Grimpe souvent aux arbres'
+ 'Chat chien. Elle me suis partout, jardin, lit , canapé  véranda....'
+ "Chat adopté à l'âge de 8 ans , ne connais pas ses antécédents"
+ "Il est méfiant avec les inconnus mais est suffisant calculateur pour devenir sociable avec les humains et les animaux (même les chiens) quand il sait qu'il peut obtenir de la nourriture."
+ "Mon chat sort tout les soirs à la même heure été comme hiver et rentre le matin pour manger et dormir. Je ne sais pas jusqu'où il va se promener."
+ 'Mon chat est une British Long air'
+ 'Lorsqu’elle me ramène un mulot elle me le ramène vivant'
+ 'Grand chasseur de souris rats etc. Adore rester sur le toit du chalet des poneys'
+ "Elle sait se faire comprendre, elle grogne et râle lorsqu'elle est contrariée ou ne veut pas de caresses."
+ 'Chatte qui ne sort pas ms joue svt avec sa souris peluche'
+ 'M’attaque très souvent le mollet par derrière, moi uniquement, pas à mon mari ni mon fils._x000D_\nIl me mord très fort d’un coup surtout lorsque je le fais rentrer de l’extérieur'
+ 'Chat de la spa adopté à 4 mois'
+ "Mon minou est très craintif... Je l'aide adoptée de la SPA et il a dû subir des maltraitances lorsqu'il était petit... Je pense qu'à cause de ça, il ne va pas du tout vers les personnes extérieures a son foyer... Mais il est très câlin et collé a moi..._x000D_\nMerci de faire cette étude pour mieux comprendre le comportement de ces gentils félins!! Ils ont tant d'amour à donner!!"
+ 'Il capture beaucoup de lezards' 'Très affectueuse'
+ 'Capture des lézards tous les jours et même plusieurs fois par jour'
+ 'Insuffisance rénale et hypertension'
+ 'propriété close avec cloture et collier antifugue, le chat ne chasse que sur 980m carrés'
+ 'Donne la patte' 'Dominant ou soumis selon le chat face à lui'
+ 'Cohabitation avec une chienne'
+ 'Mon chat vit aussi bien intérieur qu’en extérieur tout dépend où je suis. Elle s’adapte très facilement au lieu de vit et adapte son attitude. Nous sommes très proches et elle s’adapte à mon ressenti'
+ "C'est un chat ataxique, donc n'a  pas tout à fait le comportement d'un chat commun"
+ "Il a maintenant 15 ans, est en très bonne forme mais moins actif qu'il ne le fut. Et très méfiant avec les gens. C'était un bébé de 3 mois que j'ai recueilli et avait dû être maltraité.."
+ "Depuis son accident, elle est restée handicapés mais elle s'est adaptée"
+ 'Il miaule bcp pour communiquer avec nous. Et recherche le contact humain. Accueille lorsqu on revient à la maison comme " un chien "'
+ "Il a déjà ramené un lievre qui devait faire son poids. C'est un chasseur hors paire"
+ 'Comprend le bien et le mal'
+ '2 chats à la maison _x000D_\nCe premier sondage concerne le chat Nuage _x000D_\nJe vais remplir un 2ème sondage pour le 2ème chat (Tigrou) car n’ayant pas la même race le comportement est totalement différent'
+ 'Il est possessif'
+ 'Mon chat a tué presque tous les oiseaux du jardin et les mulots pendant des années, à présent elle est vieille et se contente de chasser le lézard.'
+ 'Chasse les araignées'
+ "J'ai répondu au questionnaire par rapport à mon chat M, les réponses aurait été complètement différente pour ma minette, dommage de ne pas avoir la possibilité de répondre pour 2 chats"
+ 'L’hiver sort très peu ( - d’une heure par jour ) mais au beau jour aime rester dehors , au soleil ou à L’ombre un peu caché, à dormir ou à regarder les oiseaux .'
+ 'Race oriental'
+ 'Elle aime être brossée, elle vient nous demander et se met à un endroit précis pour cela. Elle sait se faire comprendre'
+ 'Il chasse aussi les lézards.'
+ 'Chat qui sort que l’été sous surveillance!'
+ 'Il à 20 ans, ne sort pas. Par contre, des qu’il voit une mouche ou autre il bondit dessus'
+ "Mon chat profite de l'extérieur et de mon jardin attaché à une longe de 8 à 10 mètres..."
+ 'Très bavarde, aime qu’on la brosse plusieurs fois par jour'
+ "Il capture ses proies les rapporte à la maison pour jouer avec avant de les manger. Il rentre pratiquement tout les soir pour dormir avec nous,je secoue ses croquettes et rentre. Depuis qu'il a été culbuter par une voiture il s'éloigne pas trop et a régulièrement des amis chats qui viennent dans la cour je leur donne de croquettes aussi et joue avec ou parte ensemble en vadrouille."
+ 'Elle mord les humains lorsqu’elle ne veut plus de caresses'
+ 'Sauvage avec les étrangers'
+ 'A été abandonnée : c’est un chat pot de colle. Un chat chien'
+ 'Dort la journée, sort la nuit'
+ 'il est extrêmement propre ne supporte pas quand la litière est sale . Extrêmement gourmand reclame a manger , et veut gouter tous mes repas'
+ "Chat M castré qui passe bcp de temps à l'extérieur, aime être à l'intérieur mais ne supporte pas d'être enfermé sans pouvoir sortir (ancien chat errant)"
+ 'Peau de colle' 'Un amour' "Chasseur d'insectes et d'araignées"
+ 'Il fait des gros câlin lorsqu on lui demande, il frotte sa tête contre notre visage, on peut lui faire un câlin dans les bras comme un vrai bébé'
+ 'C est un chat qui vivait seul en appartement avec une dame âgée. Il a découvert l extérieur à seulement un an, ainsi que la vie avec d autres chats et un bébé. Il a pris sous son aile le chaton non sevré que nous avons recueilli. Depuis ils sont inséparables._x000D_\nNous habitons toujours dans les bois.'
+ "Très souvent à l'écoute de ce qu'il se passe dehors ! 😊 Une vraie commère !!!"
+ 'Trop bien nourrie pour chasser😃' 'Très affectueux  trop soumis'
+ 'Chasse parfaitement les insectes, mouches, araignées,...'
+ 'M, castré, 6 ans, corpulent normal'
+ 'Mes chats ont un enclos adapté à leurs besoins'
+ 'Selkirk Rex. Partage l’enclos avec les SAVs _x000D_\nEnclos adapté à leurs besoins'
+ 'Voleur'
+ "Elle est semi-sauvage et elle n'accepte que quelques personnes et elle a peur des maison donc on sups conne que quelqu'un lui a fait du mal lors d'une de ses balades"
+ 'Il adore les légumes et les fruits plus que la viande et autres protéines. Nous sommes très connecté'
+ 'Copain avec les chiens. Têtu. Très propre. Il a disparu du jour au lendemain après 11 de vie commune'
+ 'il y a trop à dire lol'
+ 'Mes chats ne chassent pas tout le temps chez moi, je ne suis pas sûre du chiffre pour les oiseaux et mulots...'
+ 'Idem, elle ne chasse pas forcément devant moi donc je ne sais pas si mes 2 dernières réponses sont exactes'
+ 'À note que mon chat ne dort pas du tout, par choix de ma part car vivant proche d’une grand route'
+ "Elle parle beaucoup et nous engueule même quand on ne s'occupe pas assez d elle. Elle a été longtemps jalouse de nos enfants"
+ "Il s'agit d'un chat recueilli vers l'âge de 3 à 4 mois,  abandonné dans notre jardin. Nous avons dû l'apprivoiser car un peu sauvage au début mais avec le temps devenu très affectueux."
+ "Ma Minette vient d'une association, elle a été maltraitée, et est donc assez méfiante, elle ne connais que moi et une ou deux personnes qui viennent fréquemment, elle fuit les inconnus, et les hommes en particulier surtout avec une grosse voix..."
+ 'Elle aime les yaourts et les bananes'
+ 'Handicap au niveau des pattes arrières empêchant le saut'
+ "Ohana n'a qun maître et est affectif qu'avec moi"
+ 'Il a quelques difficultés a chasser mais mon autre chat lui ramène des proies et il joue avec'
+ 'La dominance n’existe pas. Vous devriez revoir vos fondamentaux et vous former correctement'
+ 'Toujours dehors en été mais à la maison en hiver'
+ 'Vit avec 4 autres chats domestiques et une petite dizaine de chats libres que nous nourrissons dans le jardin, en bonne harmonie, quelques bagarres ou jeux sans méchanceté'
+ 'Adore le brossage'
+ 'Sort en harnais car jeune mais cet été je pense le lâcher définitivement'
+ 'Attaque les humains' 'Gentillesse extrême'
+ 'Après une communication animale, mon chat se la joue Dominant à l extérieur mais dit avoir peur de certains chats qu’il ne soit pas croiser (il est très petit car mal nutri quand il était tout petit) et il adore les câlins et notre présence (qu’il souhaite totale quand il est là 😂)'
+ 'Adore parler ! (interaction avec nous)' "C'est un gros lard"
+ 'Chat trouvé chaton ds la rue'
+ "J'ai répondu à votre questionnaire pour donner des infos. Je ne suis pas d'accord avec la déclaration des chats comme nuisibles pour l'environnement. Le pb vient de leur reproduction non maîtrisée par les humains. on ne compare pas les chats domestiques et les sangliers... Les chasseurs et ecolos qui le traitent comme un ennemi se trompent. OK ils chassent des oiseaux ou des souris,  l' homme détruit bcp plus la nature et cause la raréfaction des oiseaux du jardin par ses actions bien plus que les chats qui les attrapent. J'ai 2 chats depuis 11 ans et ils m'ont ramené 2 oiseaux. Des mésanges et rouge gorge viennent manger dans notre petit jardin de ville,ils se débrouillent malgré les chats. Je n'ai pas pris des chats pour les garder enfermés à la maison comme le veulent certains, ça ne prouvera rien et ce sera trop tard pour le bien être de nos chats. Cordialement"
+ "Peureuse, elle ne s'aventure pas, elle chasse très peu"
+ 'Il ramène des Lézards régulièrement au Printemps et en Été'
+ 'de plus en plus cabine avec ses maîtres en vieillissant'
+ '"vieux garçon possessif"... 😂'
+ "Très  attaché  à son lieu d'habitation qui est aussi  son lieu de naissance."
+ 'Elle est très obstinée'
+ "Aime l'été ramener des proies vivantes avec miaulements pour nous prévenir, jouer un peu avec, puis tuer pour manger."
+ 'Mon chat ne sort pas à l’extérieur'
+ "C'est une chatte sur la réserve et peureuse car battue, récupéré à la spa il y a 10 ans. Je peux comprendre ses craintes vu dans l'état où elle a été récupéré. S'est habitué à notre famille mais n'approche personne d'autre."
+ 'Chat chien. Nous suit partout, n’est 0 à plus d’un mètre de moi.'
+ 'Elle ramène des lézards aussi'
+ 'On dit que les chats sont indépendants, la mienne est une véritable glue! Elle recherche constamment notre présence....'
+ "chat de race vivant essentiellement en intérieur et lorsqu'il sort est sécurisé avec une grande laisse de 6 mètres. la seule prédation sur un oiseau s'est produite à la maison lorsqu'un oiseau est tombé dans le poêle c'est d'ailleurs elle qui l'a repéré et alertée. Elle a sauté sur l'oiseau l'a bloqué au sol mais m'a laissé le prendre sans agressivité."
+ 'Elle capture surtout des lézards.'
+ 'Très joueuse et peut-être imper-active. Très affectueuse avec son frère (même portée), quasi maternelle avec lui (mal sevré, il est un peu plus 1)'
+ 'Mon chat est assez craintif'
+ 'Une vie sans chat n’est pas concevable pour moi'
+ 'Peut se retourner contre son maître en cas de frustration'
+ 'Elle se met en chasse surtout au printemps et en été, en hiver je ne retrouve 0 "reste" de partie de chasse'
+ 'A déjà attrapé des rats, une poule et un lapin.'
+ 'Il a été amputé de la patte avant droite il y a 2 ans'
+ 'Besoin d’être acceptée par deux chattes (Mere et fille de 5 et 6 ans). Elle est arrivée à 3 mois et a quatre mois . Besoin d’avoir des interactions avec elles'
+ "Il a ramené et joué avec un orvet. Il ne l'a pas tué 😉  idem pour son seul et unique oiseau. L'oiseau s'est envolé 1x que je l'ai retiré de sa gueule."
+ 'Il adore la chaleur'
+ "Elle n'est pas du tout chasseuse alors que sa mère et sa grand mère étaient d'excellentes chasseuses et qu'elle est restée avec elles jusqu'à plus de 6 mois. En été elle rentre très peu contrairement à la période hivernale où elle sort très peu, lié à la température extérieure."
+ 'Chat d’intérieur qui noit ses doudous dans son bol d’eau'
+ "Même avec un oiseau dans la maison il n'y prête pas attention, il s'en méfie même"
+ 'Chat de race ne sort pas car avenue très fréquentée. Peur qu on nous le vole'
+ 'Chatte reproductrice élevage type familial'
+ 'Stérilisée, ne sort que dans notre terrain de 5000m² sous surveillance.'
+ 'Il est très câlin, on a beau le laisser sortir il revient toujours._x000D_\nIl dort avec nous et est vraiment un chat pot de colle.'
+ 'Tres caline, peureuse de tout, grand sentiment d abondon.'
+ 'Ma Mystie ne souhaite plus sortir depuis qu’elle a été percuté par une voiture'
+ "Il adore jouer et dormir sur le lit des enfants, il s'entend très bien avec mon 2eme chat mais souhaite dominer"
+ 'N’intéragit pas avec mes 2 autres chats, indifférente au mâle, agressive avec la femelle'
+ 'L’été ne rentre même pas pour manger, je lui donne à manger dehors.'
+ "Mon chat est très peureux du bruit de l'extérieur et très collé à mon mari. Moi , sa maîtresse   il vient me voir que pour manger et jouer en m attaquant . Il va rarement vers les femmes mais il va énormément vers les hommes"
+ 'Peureux'
+ "British Longhair - pourquoi ne pas examiner les comportements à l'intérieur; jouer seul ou seulement si il est stimulé / Rapporte les objects / Initie le jeu avec les autres chats ou avec les humains.... Bon travail"
+ "Pas d accès libre à  l exterieur de l'enclos, du coup pas de capture d'animaux"
+ 'Ce chat ne sort plus mais était un très bon chasseur de petits mammifères'
+ 'il a 3 pattes (suite a une accident de la voie publique)'
+ 'C’est un longhair pas shorthair'
+ 'Il est plutôt indépendant, n’aime pas qu’on le prenne mais il est toujours très proche de ses maitres. Il dort aussi toute la nuit comme nous.'
+ "Elle ne tue certes pas des mammifères, mais tous les insectes rentrant dans l'appartement n'en sortent pas vivants :)"
+ 'Chats de salon . Ils ne sortent pas .'
+ 'Mon chat ne peut chasser car il sort en laisse'
+ "Ma chatte a 6 mois , c'est l'hiver, elle n'est pour l'instant pas sortie seule, au printemps nous allons commencer l'apprentissage de l'extérieur comme nous avons fait pour nos deux autres chattes _x000D_\n_x000D_\n"
+ 'Entretien du poil long difficile malgré un brossage journalier - bourres de poils-'
+ 'Sors dans le jardin que sous surveillance'
+ "Mon chat n'est pas un BRI mais british longhair. Je ressens qu'il est très frustré de ne pas vivre sa vie rêvée en extérieur. Je déménage donc dans l'idée d'avoir un petit jardinet, pour lui."
+ 'Chat qui sort en harnais et longe'
+ 'Les 2 dernières questions sont inutiles si un chat ne sort pas. Cependant,  depuis la fenêtre il caquette devant un oiseau ou un lézard. C est d instinct il n a 0 chassé'
+ 'Elle ne sort 0 mais les fenêtres sont des téléviseurs : un oiseau dans le jardin,  un lézard sur la terrasse et elle chante'
+ 'Il s agit d un chaton de 12 semaines. Contrairement à ses parents, elle ne porte 0 intérêt aux oiseaux et autres qui passent dehors à hauteur de ses yeux. Pour l instant elle chasse les bouchons de champagne,  riselan, boules de papier et tout ce qui passe sous ses pattes'
+ 'Gloutonne et incapable de réguler seule son appétit et son alimentation'
+ 'Mon chat sort en laisse et dans sa grande cache extérieur'
+ "Notre minette de race cornish rex n'a pas le droit de sortir... autrement elle serait une excellente chasseuse."
+ 'Très bavarde,'
+ "Elle est nulle en chasse, 0 esprit de prédation. Son seul objectif : avoir des câlins._x000D_\nSa fille a davantage l'esprit de predation (lézards, sauterelles)"
+ 'Passion pour les lézards et sauterelles'
+ 'Un chat de maison qui aimerai bcp aller au jardin mais impossible'
+ 'Partage sa vie entre la maison et un jardin sécurisé de 600 m2 avec 5 autres chats + 1 chien Pas de sorties libres dans la campagne, intrusions impossibles des autres chats du voisinage dans le jardin sécurisé.'
+ "Il joue avec une fausse souri et me l'apporte pour jouer"
+ 'Il sort uniquement en harnais, on est toujours avec eux dans ce genre de cas.'
+ 'Essai de chasser mais n’attrape rien sauf sauterelle et mouche'
+ 'J’ai deux chats PERs. J’ai répondu pour un des deux .' 'Très affectueux'
+ 'Mon chat n’est 0 sorti de la maison pour sa sécurité. Trop peur de la voir se faire écrasée ou empoisonnée..._x000D_\nBon courage à vous'
+ 'Le PER est d’un naturel calme, placide et le mien ne chasse pas'
+ 'Idylle  ma F PER aime aller dans la jardin aux beaux jours mais ne chasse pas. Sinon elle aime le lit et les canapés'
+ 'Elle ne veut pas que l’on touche certaines choses lui appartenant. Par exemple, elle ne veut pas que l’on touche à sa plante d’herbe'
+ "C'est un très bon chasseur mais dans nos assiettes et chaparde dès que quelque chose est oublié dans la cuisine. Il ouvre d'ailleurs très bien les boîtes et autres"
+ 'Mon chat PER est né aveugle mais le vie très bien']
+Global value counts:
+Additional Info
+Joueur                                                                                                                                                                 4
+Chat d’intérieur                                                                                                                                                       3
+Mon chat ne sort pas                                                                                                                                                   2
+Curieuse                                                                                                                                                               2
+Chatte ayant accès à l'extérieur mais dans un enclos collé à la maison. Pas de chasse possible à part les insectes volants                                             2
+                                                                                                                                                                      ..
+Le PER est d’un naturel calme, placide et le mien ne chasse pas                                                                                                        1
+Idylle  ma F PER aime aller dans la jardin aux beaux jours mais ne chasse pas. Sinon elle aime le lit et les canapés                                                   1
+Elle ne veut pas que l’on touche certaines choses lui appartenant. Par exemple, elle ne veut pas que l’on touche à sa plante d’herbe                                   1
+C'est un très bon chasseur mais dans nos assiettes et chaparde dès que quelque chose est oublié dans la cuisine. Il ouvre d'ailleurs très bien les boîtes et autres    1
+Mon chat PER est né aveugle mais le vie très bien                                                                                                                      1
+Name: count, Length: 803, dtype: int64
+
+Value counts by Breed:
+Breed  Additional Info                                                                                                                                                                                                                                                                                  
+1      Miaule souvent à nous                                                                                                                                                                                                                                                                                2
+       Adore jouer à cache-cache avec moi dans la maison                                                                                                                                                                                                                                                    1
+       Aime les sorties avec le harnais, connait beaucouo de conignes                                                                                                                                                                                                                                       1
+       Bavard                                                                                                                                                                                                                                                                                               1
+       Capture des insectes (mouches, fourmis, araignées...)                                                                                                                                                                                                                                                1
+                                                                                                                                                                                                                                                                                                           ..
+15     Le comportement de prédation de mon chat est beaucoup plus élevé que ça n’en a l’air dans mes dernières réponses : _x000D_\n_x000D_\nEn effet, j’ai fait installé un grillage sur ma terrasse pour que les pigeons et autres oiseaux ne puissent pas rentrer et qu’il ne puisse pas les capturer.    1
+       Mes chats de race ont un enclos extérieur et celui ci empêche les oiseaux ou petits mammifère de rentrer dedans !                                                                                                                                                                                    1
+       Mes chats ont un enclos adapté à leurs besoins                                                                                                                                                                                                                                                       1
+       Mon chat ne sort que pour des balades en laisse.                                                                                                                                                                                                                                                     1
+       Pour l'instant, il n'a accès qu'au balcon et n'a pas encore trouvé comment descendre contrairement a ma plus agé qui non seulement descent comme ceux des voisin mais réussi a remonter alors que les autres ne le peuvent pas.                                                                      1
+Name: count, Length: 815, dtype: int64
+
+--------------------------------------------------
+
+Correlation Matrix:
+                  Row.names    Gender  Age Group     Breed  Number of Cats  Housing Type      Area  ...  Dominant  Aggressive  Impulsive  Predictable  Distracted  Bird Predation  Mammal Predation
+Row.names          1.000000 -0.005320  -0.073907 -0.008654       -0.098989     -0.318095 -0.305039  ... -0.069581   -0.064115  -0.046983     0.045791    0.094753       -0.455717         -0.432304
+Gender            -0.005320  1.000000   0.008506 -0.001186        0.027353      0.015030  0.020453  ... -0.060058    0.065800  -0.015067    -0.021560   -0.050997       -0.023185         -0.035562
+Age Group         -0.073907  0.008506   1.000000  0.069881        0.139582      0.086319  0.068839  ...  0.083244    0.181176  -0.038376     0.076765   -0.174224        0.153356          0.151352
+Breed             -0.008654 -0.001186   0.069881  1.000000        0.020434      0.000383  0.005262  ... -0.017646    0.043374   0.004196    -0.026123    0.000355        0.066192          0.071010
+Number of Cats    -0.098989  0.027353   0.139582  0.020434        1.000000      0.223328  0.173931  ... -0.000627   -0.127976  -0.043285    -0.028136   -0.138923        0.086085          0.077583
+Housing Type      -0.318095  0.015030   0.086319  0.000383        0.223328      1.000000  0.519486  ... -0.013062    0.023299  -0.014858    -0.020821   -0.109092        0.283473          0.331587
+Area              -0.305039  0.020453   0.068839  0.005262        0.173931      0.519486  1.000000  ...  0.005076   -0.012792  -0.006083    -0.024166   -0.070278        0.231128          0.286736
+Outside Access    -0.260005 -0.069161   0.225566  0.057126        0.070359      0.306346  0.185145  ...  0.089632    0.127613   0.052676    -0.061319   -0.109312        0.558582          0.608233
+Observations       0.060388 -0.020493  -0.068517 -0.039350        0.048771     -0.049566 -0.045229  ... -0.013095   -0.081514  -0.013771     0.013513    0.012435       -0.111243         -0.113161
+Shy               -0.026032  0.079598   0.134335  0.037288       -0.101146      0.031714  0.016897  ... -0.084409    0.105263  -0.018329     0.013380   -0.007166        0.038502          0.040813
+Calm               0.005969  0.015339   0.238970  0.047400       -0.037981      0.030700 -0.001338  ... -0.195820   -0.063374  -0.289085     0.171576   -0.047912       -0.020743          0.013746
+Scared             0.018978  0.109472   0.069087  0.001391       -0.227814     -0.024383 -0.034670  ... -0.107036    0.225157   0.032905     0.059610    0.065193        0.013201         -0.003079
+Smart             -0.011830  0.017539   0.023649 -0.041072       -0.032027     -0.018011 -0.021521  ...  0.085930    0.006395   0.032086     0.143409    0.053676       -0.018371         -0.011783
+Vigilant          -0.087164  0.048406   0.112581 -0.021344       -0.049980      0.027800  0.012195  ...  0.091329    0.111331   0.059174     0.103214   -0.021535        0.068178          0.068230
+Persevering       -0.050651  0.017847  -0.027538 -0.062897       -0.007529     -0.010909 -0.010612  ...  0.148425    0.064195   0.149973     0.128099    0.084802        0.052166          0.051805
+Loving             0.021614 -0.069213   0.032593  0.019088        0.020337     -0.047397 -0.034048  ... -0.045038   -0.075904  -0.075690     0.213092    0.143963       -0.091280         -0.072341
+Friendly           0.067096 -0.092381  -0.122045 -0.027397        0.014052     -0.080506 -0.062645  ... -0.025666   -0.128809  -0.041536     0.142986    0.142639       -0.147707         -0.129523
+Solitary          -0.090201  0.062664   0.202637  0.029398       -0.067686      0.058857  0.060738  ...  0.137371    0.243669   0.100991    -0.000684   -0.068404        0.130220          0.143177
+Brutal            -0.020341 -0.062883  -0.090276 -0.013719       -0.022293     -0.048469 -0.000619  ...  0.416888    0.289243   0.464895    -0.034143    0.122784        0.064682          0.043528
+Dominant          -0.069581 -0.060058   0.083244 -0.017646       -0.000627     -0.013062  0.005076  ...  1.000000    0.456734   0.423034     0.044399    0.009046        0.097721          0.094857
+Aggressive        -0.064115  0.065800   0.181176  0.043374       -0.127976      0.023299 -0.012792  ...  0.456734    1.000000   0.427603     0.052517    0.024858        0.127420          0.122387
+Impulsive         -0.046983 -0.015067  -0.038376  0.004196       -0.043285     -0.014858 -0.006083  ...  0.423034    0.427603   1.000000     0.053115    0.194510        0.074992          0.079279
+Predictable        0.045791 -0.021560   0.076765 -0.026123       -0.028136     -0.020821 -0.024166  ...  0.044399    0.052517   0.053115     1.000000    0.226543       -0.083048         -0.057434
+Distracted         0.094753 -0.050997  -0.174224  0.000355       -0.138923     -0.109092 -0.070278  ...  0.009046    0.024858   0.194510     0.226543    1.000000       -0.090601         -0.107231
+Bird Predation    -0.455717 -0.023185   0.153356  0.066192        0.086085      0.283473  0.231128  ...  0.097721    0.127420   0.074992    -0.083048   -0.090601        1.000000          0.768273
+Mammal Predation  -0.432304 -0.035562   0.151352  0.071010        0.077583      0.331587  0.286736  ...  0.094857    0.122387   0.079279    -0.057434   -0.107231        0.768273          1.000000
+
+[26 rows x 26 columns]
+
