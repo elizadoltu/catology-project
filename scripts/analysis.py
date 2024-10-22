@@ -1,9 +1,14 @@
 import pandas as pd
+import os
 
-file_path = 'Cats_database.xlsx'
+file_path = './Cats_database.xlsx'
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
-output_file = 'cats_data_analysis.txt'
+output_directory = 'auto'
+
+os.makedirs(output_directory, exist_ok=True)
+
+output_file = os.path.join(output_directory, 'cats_data_analysis.txt')
 
 def display_class_instances(df, file):
     breed_counts = df['Breed'].value_counts()
