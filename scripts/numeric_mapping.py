@@ -9,7 +9,7 @@ df = pd.read_excel(file_path)
 # Define mappings for the categorical variables
 gender_mapping = {'M': 0, 'F': 1,'NSP':3}
 age_mapping = {'Moinsde1': 1, '1a2': 2, '2a10': 3, 'Plusde10': 4}
-
+abundance_mapping = {'NSP': 0, '3':3, '2':2, '1':1, '0':0}
 # Updated breed mapping using the values you provided
 breed_mapping = {
     'BEN': 1, 'SBI': 2, 'BRI': 3, 'CHA': 4, 'EUR': 5, 'MCO': 6, 'PER': 7, 
@@ -27,6 +27,7 @@ df['Breed'] = df['Breed'].map(breed_mapping)
 df['Housing Type'] = df['Housing Type'].map(housing_mapping)
 df['Area'] = df['Area'].map(area_mapping)  # Apply the area mapping
 df['Number of Cats'] = df['Number of Cats'].map(number_of_cats_mapping)
+df['Abundance of Prey'] = df['Abundance of Prey'].map(abundance_mapping)
 
 # Save the modified DataFrame to a new Excel file
 df.to_excel('./data/Cats_database.xlsx', index=False)
