@@ -32,26 +32,6 @@ df['Abundance of Prey'] = df['Abundance of Prey'].map(abundance_mapping)
 # Save the modified DataFrame to a new Excel file
 df.to_excel('./data/Cats_database.xlsx', index=False)
 
-# Optional: Create boxplots
-# plt.figure(figsize=(14, 10))
 
-# plt.subplot(2, 2, 1)
-# sns.boxplot(x=df['Gender'])
-# plt.title('Gender Boxplot')
 
-# plt.subplot(2, 2, 2)
-# sns.boxplot(x=df['Age Group'])
-# plt.title('Age Group Boxplot')
 
-# plt.subplot(2, 2, 3)
-# sns.boxplot(x=df['Breed'])
-# plt.title('Breed Boxplot')
-
-# plt.subplot(2, 2, 4)
-# sns.boxplot(x=df['Housing Type'])
-# plt.title('Housing Type Boxplot')
-
-# plt.tight_layout()
-# plt.savefig('boxplots_cats.png')
-
-# plt.show()

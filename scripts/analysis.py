@@ -4,6 +4,9 @@ import os
 file_path = './data/Cats_database.xlsx'
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
+# Drop the specified columns
+df = df.drop(columns=['Row.names', 'Timestamp', 'Additional Info'], errors='ignore')
+
 output_directory = 'auto'
 
 os.makedirs(output_directory, exist_ok=True)
@@ -28,10 +31,26 @@ def display_distinct_values(df, file):
         
 def display_correlations(df, file):
     numeric_df = df.select_dtypes(include=['int64', 'float64'])
+    
+    # Calculate the correlation matrix
     correlations = numeric_df.corr()
-    file.write("Correlation Matrix:\n")
-    file.write(str(correlations))
-    file.write("\n\n")
+
+    # Check if 'Breed' is in the numeric DataFrame
+    if 'Breed' in correlations.columns:
+        # Get the correlation of all attributes with 'Breed'
+        breed_correlations = correlations['Breed'].drop('Breed')
+
+        # Sort attributes based on their absolute correlation with 'Breed'
+        sorted_attributes = breed_correlations.abs().sort_values(ascending=False).index
+        
+        # Create a sorted correlation matrix based on the sorted attributes
+        sorted_correlations = correlations.loc[sorted_attributes, sorted_attributes]
+        
+        file.write("Correlation Matrix (ordered by influence on 'Breed'):\n")
+        file.write(str(sorted_correlations))
+        file.write("\n\n")
+    else:
+        file.write("No numeric attributes found to correlate with 'Breed'.\n\n")
     
 with open(output_file, 'w', encoding='utf-8') as file:
     display_class_instances(df, file)
