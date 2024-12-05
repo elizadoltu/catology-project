@@ -75,7 +75,7 @@ def evaluate_network(X_test, y_test, weights, biases):
 # Main execution
 def main():
     # Load data
-    data_path = r"D:\Facultate\artifIntel\catology-project\data\Cats_database.xlsx"
+    data_path = "./data/Cats_database.xlsx"
     data = pd.read_excel(data_path)
     data_cleaned = data.drop(columns=['Row.names', 'Timestamp', 'Additional Info'], errors='ignore')
     X = data_cleaned.drop(columns=['Breed'])
