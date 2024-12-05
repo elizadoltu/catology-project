@@ -1,4 +1,3 @@
-# Import necessary libraries
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -14,6 +13,12 @@ def sigmoid_derivative(z):
 
 def mse_loss(y_true, y_pred):
     return np.mean((y_true - y_pred.flatten()) ** 2)
+
+def accuracy(y_true, y_pred):
+    # Convert predictions to binary (0 or 1) based on threshold
+    y_pred_labels = (y_pred >= 0.5).astype(int)  # Use 0.5 as threshold for binary classification
+    accuracy = np.mean(y_true == y_pred_labels)
+    return accuracy
 
 # Step 2: Initialize parameters
 def initialize_parameters(input_size, hidden_layer_size, output_size):
@@ -109,6 +114,15 @@ def main():
     # Evaluate the network
     test_loss, predictions = evaluate_network(X_test, y_test, weights, biases)
     print(f"Final Test Loss: {test_loss}")
+
+    # Calculate and print training accuracy (multiply by 100 to get percentage)
+    A2_train, _ = forward_propagation(X_train, weights, biases)
+    train_accuracy = accuracy(y_train, A2_train) * 100  # Multiply by 100 for percentage
+    print(f"Training Accuracy: {train_accuracy:.2f}%")
+
+    # Calculate and print test accuracy (multiply by 100 to get percentage)
+    test_accuracy = accuracy(y_test, predictions) * 100  # Multiply by 100 for percentage
+    print(f"Test Accuracy: {test_accuracy:.2f}%")
 
 if __name__ == "__main__":
     main()
