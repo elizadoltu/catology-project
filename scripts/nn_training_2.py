@@ -43,7 +43,6 @@ def forward_propagation(X, weights, biases):
     cache = {"Z1": Z1, "A1": A1, "Z2": Z2, "A2": A2}  # Store intermediate values
     return A2, cache
 
-# Step 4: Backward propagation (as per image)
 
 def backward_propagation(X, y, weights, biases, cache, learning_rate):
     m = X.shape[0]  # Number of training examples
@@ -63,7 +62,7 @@ def backward_propagation(X, y, weights, biases, cache, learning_rate):
 
     # Update weights and biases (T4.5)
     weights["W1"] -= learning_rate * dW1 / m # the weights are updated with the gradients multiplied by the learning rate and divided by the number of training examples
-    weights["W2"] -= learning_rate * dW2 / m
+    weights["W2"] -= learning_rate * dW2 / m 
     biases["b1"] -= learning_rate * db1 / m # the biases are updated with the gradients multiplied by the learning rate and divided by the number of training examples
     biases["b2"] -= learning_rate * db2 / m
 
