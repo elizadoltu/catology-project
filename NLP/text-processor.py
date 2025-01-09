@@ -53,20 +53,26 @@ def stylometric_analysis(text):
     }
 
 
-# Function to generate alternative versions of the text
 def generate_alternative_versions(text):
     words = text.split()
+    total_words = len(words)
+    replacement_count = max(1, int(total_words * 0.2))  # Ensure at least 20% of words are replaced
     new_text = []
+    replaced = 0  # To keep track of how many words have been replaced
+
     for word in words:
-        if random.random() < 0.2:  # Replace 20% of the words
+        if replaced < replacement_count and random.random() < 0.5:  # Replace with 50% chance until we reach the target
             synsets = wordnet.synsets(word)
             if synsets:
                 synonyms = [syn.lemmas()[0].name() for syn in synsets if syn.lemmas()]
                 if synonyms:
                     new_text.append(random.choice(synonyms))
+                    replaced += 1
                     continue
         new_text.append(word)
+
     return " ".join(new_text)
+
 
 
 def extract_keywords_and_generate_sentences(text, num_keywords=5):
@@ -94,16 +100,22 @@ def extract_keywords_and_generate_sentences(text, num_keywords=5):
     # Generate new sentences for each keyword
     generated_sentences = {}
     for phrase in ranked_phrases:
-        # Generate a sentence using the phrase as a prompt
+        # Generate a short, non-code-like sentence using the phrase as a prompt
         try:
-            generated = text_generator(f"{phrase}", max_length=30, num_return_sequences=1)
-            new_sentence = generated[0]["generated_text"]
-            generated_sentences[phrase] = new_sentence
+            generated = text_generator(f"{phrase}", max_length=20, num_return_sequences=1, temperature=0.7) # temperature = 0.7 pentru a genera propozitii mai variate
+            new_sentence = generated[0]["generated_text"].strip()
+
+            # Ensure the sentence isn't a code-like format or too long
+            if not new_sentence.startswith('```') and len(new_sentence.split()) > 3:
+                generated_sentences[phrase] = new_sentence
+            else:
+                generated_sentences[phrase] = f"Could not generate a suitable sentence for {phrase}."
         except Exception as e:
             print(f"Error generating sentence for {phrase}: {e}")
             generated_sentences[phrase] = f"Could not generate a sentence for {phrase}."
 
     return generated_sentences
+
 
 
 # Main script
@@ -114,12 +126,10 @@ if __name__ == "__main__":
     with open("output.txt", "w", encoding="utf-8") as output_file:
         # Identify language
         lang = identify_language(text)
-        print(f"Language detected: {lang}")
         output_file.write(f"Language detected: {lang}\n\n")
 
         # Stylometric analysis
         analysis = stylometric_analysis(text)
-        print("\nStylometric Analysis:")
         output_file.write("Stylometric Analysis:\n")
         output_file.write(f"Character count: {analysis['char_count']}\n")
         output_file.write(f"Word count: {analysis['word_count']}\n")
@@ -130,14 +140,11 @@ if __name__ == "__main__":
 
         # Generate alternative versions
         alternative_text = generate_alternative_versions(text)
-        print("\nAlternative Text:")
-        print(alternative_text)
         output_file.write("Alternative Text:\n")
         output_file.write(alternative_text + "\n\n")
 
         # Extract keywords and generate sentences
         keywords_sentences = extract_keywords_and_generate_sentences(text)
-        print("\nGenerated Sentences for Keywords:")
         output_file.write("Generated Sentences for Keywords:\n")
         for keyword, sentence in keywords_sentences.items():
             print(f"{keyword}: {sentence}")
