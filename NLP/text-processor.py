@@ -60,8 +60,19 @@ def generate_alternative_versions(text):
     new_text = []
     replaced = 0  # To keep track of how many words have been replaced
 
+    detected_language = identify_language(text)
+    try:
+        if detected_language in stopwords.fileids():
+            language_stopwords = stopwords.words(detected_language)
+        else:
+            language_stopwords = stopwords.words("english")  # Default to English if unsupported
+    except Exception as e:
+        print(f"Error loading stopwords for {detected_language}: {e}")
+        language_stopwords = stopwords.words("english")  # Fallback to English
+
     for word in words:
-        if replaced < replacement_count and random.random() < 0.5:  # Replace with 50% chance until we reach the target
+        if word.lower() not in language_stopwords and replaced < replacement_count:
+            # Avoid replacing stopwords, and replace only if the target count isn't reached
             synsets = wordnet.synsets(word)
             if synsets:
                 synonyms = [syn.lemmas()[0].name() for syn in synsets if syn.lemmas()]
@@ -72,6 +83,7 @@ def generate_alternative_versions(text):
         new_text.append(word)
 
     return " ".join(new_text)
+
 
 
 
