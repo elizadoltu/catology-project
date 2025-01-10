@@ -53,6 +53,8 @@ def stylometric_analysis(text):
     }
 
 
+
+
 def generate_alternative_versions(text):
     words = text.split()
     total_words = len(words)
@@ -75,14 +77,37 @@ def generate_alternative_versions(text):
             # Avoid replacing stopwords, and replace only if the target count isn't reached
             synsets = wordnet.synsets(word)
             if synsets:
-                synonyms = [syn.lemmas()[0].name() for syn in synsets if syn.lemmas()]
-                if synonyms:
-                    new_text.append(random.choice(synonyms))
+                synonyms = []
+                hypernyms = []
+                antonyms = []
+
+                
+                for syn in synsets:
+                    for lemma in syn.lemmas():
+                        synonyms.append(lemma.name())
+
+                
+                for syn in synsets:
+                    for hypernym in syn.hypernyms():
+                        for lemma in hypernym.lemmas():
+                            hypernyms.append(lemma.name())
+
+               
+                for syn in synsets:
+                    for lemma in syn.lemmas():
+                        if lemma.antonyms():
+                            antonyms.extend([ant.name() for ant in lemma.antonyms()])
+
+                # Combine all possible alternatives: synonyms, hypernyms, and negated antonyms
+                alternatives = list(set(synonyms + hypernyms + ['not ' + ant for ant in antonyms]))
+                if alternatives:
+                    new_text.append(random.choice(alternatives))
                     replaced += 1
                     continue
         new_text.append(word)
 
     return " ".join(new_text)
+
 
 
 

@@ -1,26 +1,41 @@
 Language detected: en
 
 Stylometric Analysis:
-Character count: 37
-Word count: 8
+Character count: 89
+Word count: 18
 Word frequencies:
 Today: 1
-I: 2
+I: 4
 went: 1
 to: 1
 school: 1
 and: 1
 studied: 1
+Perhaps: 1
+should: 1
+study: 1
+some: 1
+more: 1
+am: 1
+quite: 1
+silly: 1
 
 Alternative Text:
-nowadays I went to school and I studied.
+twenty-four_hour_period I rifle to school_day and I studied. Perhaps I should study some more. I am quite silly.
 
 Generated Sentences for Keywords:
-went: went, the most recent of which was the final chapter of the second part of the book, "
-today: today, so I'm not sure why, but it's hard to tell.
+quite silly: quite silly.
 
-So,
-studied: studied by others.
+As a result of this, I've also started to use the same formula
+went: went.
 
-She did not say if she was aware of the other person's
-school: school, but also to teach high school English lessons and to teach children about religion and the Bible.
+"I'm not going to say that he was guilty of anything, but I
+today: today in the US.
+
+"Our policy is to look at the situation in the Middle East
+study: study
+
+"I'm really happy with the way we've been playing," said coach Jon Be
+studied: studied, but the book does not directly address the subject.
+
+The book's focus is
